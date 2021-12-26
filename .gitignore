@@ -4,7 +4,6 @@ elasticsearch/jdk
 elasticsearch/modules
 elasticsearch/plugins
 
-kibana/
 kibana/bin
 kibana/node
 kibana/node_modules
