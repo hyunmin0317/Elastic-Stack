@@ -1478,3 +1478,587 @@ Caused by: java.lang.IllegalArgumentException: unknown setting [cluster.initial_
 [2021-12-26T04:02:26,694][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-6940938398738306433/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
 [2021-12-26T04:02:26,694][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-6940938398738306433/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
 [2021-12-26T04:02:26,695][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T04:42:15,310][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[2641], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T04:42:15,316][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T04:42:15,317][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-2040807149573764294, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T04:42:19,391][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T04:42:19,392][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T04:42:19,392][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T04:42:19,392][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T04:42:19,393][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T04:42:19,393][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T04:42:19,393][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T04:42:19,394][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T04:42:19,394][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T04:42:19,406][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T04:42:19,406][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T04:42:19,407][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T04:42:19,407][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T04:42:19,408][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T04:42:19,408][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T04:42:19,408][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T04:42:19,409][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T04:42:19,409][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T04:42:19,409][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T04:42:19,410][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T04:42:19,410][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T04:42:19,410][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T04:42:19,411][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T04:42:19,411][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T04:42:19,412][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T04:42:19,412][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T04:42:19,412][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T04:42:19,413][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T04:42:19,413][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T04:42:19,413][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T04:42:19,414][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T04:42:19,414][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T04:42:19,414][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T04:42:19,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T04:42:19,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T04:42:19,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T04:42:19,416][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T04:42:19,419][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T04:42:19,419][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T04:42:19,419][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T04:42:19,420][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T04:42:19,420][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T04:42:19,420][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T04:42:19,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T04:42:19,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T04:42:19,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T04:42:19,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T04:42:19,422][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T04:42:19,422][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T04:42:19,422][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T04:42:19,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T04:42:19,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T04:42:19,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T04:42:19,424][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T04:42:19,424][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T04:42:19,424][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T04:42:19,428][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T04:42:19,429][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T04:42:19,429][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T04:42:19,430][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T04:42:19,494][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [12.7gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T04:42:19,494][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T04:42:19,603][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T04:42:27,531][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/2838] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T04:42:28,215][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T04:42:29,059][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T04:42:29,061][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T04:42:29,945][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T04:42:30,042][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T04:42:30,874][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T04:42:31,610][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T04:42:31,611][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T04:42:31,626][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T04:42:31,627][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T04:42:31,796][INFO ][o.e.t.TransportService   ] [node-1] publish_address {10.178.0.2:9300}, bound_addresses {10.178.0.2:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T04:42:32,455][INFO ][o.e.b.BootstrapChecks    ] [node-1] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2021-12-26T04:42:32,494][INFO ][o.e.c.c.Coordinator      ] [node-1] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T04:42:32,638][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 7, version: 125, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}
+[2021-12-26T04:42:32,744][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}, term: 7, version: 125, reason: Publication{term=7, version=125}
+[2021-12-26T04:42:32,826][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {10.178.0.2:9200}, bound_addresses {10.178.0.2:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T04:42:32,827][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T04:42:33,305][INFO ][o.e.l.LicenseService     ] [node-1] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T04:42:33,308][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Active license is now [BASIC]; Security is disabled
+[2021-12-26T04:42:33,308][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T04:42:33,330][INFO ][o.e.g.GatewayService     ] [node-1] recovered [5] indices into cluster_state
+[2021-12-26T04:42:34,005][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip databases
+[2021-12-26T04:42:34,006][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T04:42:34,049][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T04:42:34,052][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T04:42:34,065][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T04:42:34,467][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T04:42:34,870][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T04:42:34,939][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T04:42:35,285][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2021-12-26T04:42:35,460][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2021-12-26T04:42:35,600][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2021-12-26T04:42:36,295][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T04:43:47,850][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-2}{TR0lQvIWReGJkp_xkDEvkA}{gl9GfYScR7y0ou7LDXHrpA}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-2][10.178.0.3:9300][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:46:34,985][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}], current []}, term: 7, version: 135, reason: becoming candidate: joinLeaderInTerm
+[2021-12-26T04:46:35,018][INFO ][o.e.c.r.a.AllocationService] [node-1] updating number_of_replicas to [1] for indices [.geoip_databases, .ds-ilm-history-5-2021.12.26-000001, .ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001]
+[2021-12-26T04:46:35,020][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([2] nodes joined)[{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw} elect leader, {node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 18, version: 136, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}, added {{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}
+[2021-12-26T04:46:35,114][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{j6o5xCEGQhWILF-DhwGfNg}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}, added {{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}, term: 18, version: 136, reason: Publication{term=18, version=136}
+[2021-12-26T04:48:05,149][WARN ][o.e.c.c.LagDetector      ] [node-1] node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}] is lagging at cluster state version [0], although publication of cluster state version [136] completed [1.5m] ago
+[2021-12-26T04:48:05,154][INFO ][o.e.c.r.a.AllocationService] [node-1] updating number_of_replicas to [0] for indices [.geoip_databases, .ds-ilm-history-5-2021.12.26-000001, .ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001]
+[2021-12-26T04:48:05,157][INFO ][o.e.c.s.MasterService    ] [node-1] node-left[{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw} reason: lagging], term: 18, version: 138, delta: removed {{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}
+[2021-12-26T04:48:05,185][INFO ][o.e.c.s.ClusterApplierService] [node-1] removed {{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}, term: 18, version: 138, reason: Publication{term=18, version=138}
+[2021-12-26T04:48:05,216][INFO ][o.e.c.r.DelayedAllocationService] [node-1] scheduling reroute for delayed shards in [59.9s] (1 delayed shards)
+[2021-12-26T04:48:07,434][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:08,418][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:09,422][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:10,423][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:11,418][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:12,416][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:13,427][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:14,426][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{NydDby4VQfeaOTlGRSgXMw}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:48:38,044][INFO ][o.e.x.m.p.NativeController] [node-1] Native controller process has stopped - no new native processes can be started
+[2021-12-26T04:48:38,045][INFO ][o.e.n.Node               ] [node-1] stopping ...
+[2021-12-26T04:48:38,049][INFO ][o.e.x.w.WatcherService   ] [node-1] stopping watch service, reason [shutdown initiated]
+[2021-12-26T04:48:38,050][INFO ][o.e.x.w.WatcherLifeCycleService] [node-1] watcher has stopped and shutdown
+[2021-12-26T04:48:38,212][INFO ][o.e.n.Node               ] [node-1] stopped
+[2021-12-26T04:48:38,213][INFO ][o.e.n.Node               ] [node-1] closing ...
+[2021-12-26T04:48:38,226][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T04:48:38,226][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T04:48:38,227][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-2040807149573764294/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T04:48:38,228][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T04:48:49,795][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[2947], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T04:48:49,802][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T04:48:49,802][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-12334623830085546469, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T04:48:53,677][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T04:48:53,678][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T04:48:53,678][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T04:48:53,678][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T04:48:53,679][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T04:48:53,679][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T04:48:53,680][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T04:48:53,680][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T04:48:53,680][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T04:48:53,681][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T04:48:53,681][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T04:48:53,682][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T04:48:53,682][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T04:48:53,683][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T04:48:53,683][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T04:48:53,683][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T04:48:53,684][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T04:48:53,684][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T04:48:53,684][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T04:48:53,685][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T04:48:53,685][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T04:48:53,686][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T04:48:53,686][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T04:48:53,687][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T04:48:53,687][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T04:48:53,687][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T04:48:53,688][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T04:48:53,688][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T04:48:53,688][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T04:48:53,689][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T04:48:53,689][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T04:48:53,690][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T04:48:53,690][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T04:48:53,690][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T04:48:53,691][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T04:48:53,691][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T04:48:53,691][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T04:48:53,692][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T04:48:53,692][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T04:48:53,693][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T04:48:53,693][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T04:48:53,694][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T04:48:53,694][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T04:48:53,695][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T04:48:53,695][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T04:48:53,695][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T04:48:53,696][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T04:48:53,696][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T04:48:53,696][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T04:48:53,697][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T04:48:53,697][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T04:48:53,697][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T04:48:53,698][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T04:48:53,698][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T04:48:53,699][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T04:48:53,699][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T04:48:53,699][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T04:48:53,700][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T04:48:53,700][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T04:48:53,701][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T04:48:53,747][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [12.7gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T04:48:53,748][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T04:48:53,838][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T04:49:01,692][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/3144] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T04:49:02,497][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T04:49:03,649][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T04:49:03,652][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T04:49:04,537][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T04:49:04,631][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T04:49:05,387][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T04:49:06,174][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T04:49:06,174][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T04:49:06,189][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T04:49:06,190][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T04:49:06,338][INFO ][o.e.t.TransportService   ] [node-1] publish_address {10.178.0.2:9300}, bound_addresses {10.178.0.2:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T04:49:06,745][INFO ][o.e.b.BootstrapChecks    ] [node-1] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2021-12-26T04:49:06,801][INFO ][o.e.c.c.Coordinator      ] [node-1] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T04:49:06,986][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 19, version: 139, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}
+[2021-12-26T04:49:07,088][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}, term: 19, version: 139, reason: Publication{term=19, version=139}
+[2021-12-26T04:49:07,198][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {10.178.0.2:9200}, bound_addresses {10.178.0.2:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T04:49:07,199][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T04:49:07,621][INFO ][o.e.l.LicenseService     ] [node-1] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T04:49:07,623][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Active license is now [BASIC]; Security is disabled
+[2021-12-26T04:49:07,624][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T04:49:07,638][INFO ][o.e.g.GatewayService     ] [node-1] recovered [5] indices into cluster_state
+[2021-12-26T04:49:08,397][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip databases
+[2021-12-26T04:49:08,398][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T04:49:08,454][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T04:49:08,457][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T04:49:08,467][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T04:49:08,932][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T04:49:09,063][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T04:49:09,219][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T04:49:09,469][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2021-12-26T04:49:09,589][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2021-12-26T04:49:09,791][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2021-12-26T04:49:10,639][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T04:50:30,821][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}], current []}, term: 19, version: 149, reason: becoming candidate: joinLeaderInTerm
+[2021-12-26T04:50:30,832][WARN ][o.e.c.c.Coordinator      ] [node-1] failed to validate incoming join request from node [{node-3}{l49c9ccrTJSDSragQz8IZg}{YFT5oTg_RvK34HrACBY7mQ}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true}]
+org.elasticsearch.transport.RemoteTransportException: [node-3][10.178.0.4:9301][internal:cluster/coordination/join/validate]
+Caused by: org.elasticsearch.cluster.coordination.CoordinationStateRejectedException: This node previously joined a cluster with UUID [oZEI3dmKRJi_E6H2W5iXdA] and is now trying to join a different cluster with UUID [2AXJqMW2R6GFfRpqcx2quQ]. This is forbidden and usually indicates an incorrect discovery or cluster bootstrapping configuration. Note that the cluster UUID persists across restarts and can only be changed by deleting the contents of the node's data paths [] which will also remove any data held by this node.
+	at org.elasticsearch.cluster.coordination.JoinHelper.lambda$new$8(JoinHelper.java:213) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:341) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:417) ~[?:?]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:67) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.InboundHandler$1.doRun(InboundHandler.java:260) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T04:50:30,868][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 21, version: 150, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}
+[2021-12-26T04:50:30,920][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{1VIIErBFQmKO-U3nCUbO_Q}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}, term: 21, version: 150, reason: Publication{term=21, version=150}
+[2021-12-26T04:51:20,502][INFO ][o.e.x.m.p.NativeController] [node-1] Native controller process has stopped - no new native processes can be started
+[2021-12-26T04:51:20,503][INFO ][o.e.n.Node               ] [node-1] stopping ...
+[2021-12-26T04:51:20,507][INFO ][o.e.x.w.WatcherService   ] [node-1] stopping watch service, reason [shutdown initiated]
+[2021-12-26T04:51:20,508][INFO ][o.e.x.w.WatcherLifeCycleService] [node-1] watcher has stopped and shutdown
+[2021-12-26T04:51:20,787][INFO ][o.e.n.Node               ] [node-1] stopped
+[2021-12-26T04:51:20,788][INFO ][o.e.n.Node               ] [node-1] closing ...
+[2021-12-26T04:51:20,802][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T04:51:20,802][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T04:51:20,803][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-12334623830085546469/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T04:51:20,804][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T04:51:53,257][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[3228], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T04:51:53,264][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T04:51:53,265][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-11010195566925535056, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T04:51:57,038][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T04:51:57,039][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T04:51:57,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T04:51:57,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T04:51:57,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T04:51:57,041][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T04:51:57,041][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T04:51:57,042][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T04:51:57,042][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T04:51:57,042][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T04:51:57,043][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T04:51:57,043][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T04:51:57,044][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T04:51:57,044][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T04:51:57,044][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T04:51:57,045][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T04:51:57,045][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T04:51:57,045][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T04:51:57,046][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T04:51:57,047][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T04:51:57,047][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T04:51:57,048][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T04:51:57,048][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T04:51:57,048][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T04:51:57,049][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T04:51:57,049][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T04:51:57,050][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T04:51:57,050][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T04:51:57,050][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T04:51:57,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T04:51:57,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T04:51:57,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T04:51:57,052][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T04:51:57,052][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T04:51:57,052][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T04:51:57,053][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T04:51:57,053][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T04:51:57,054][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T04:51:57,054][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T04:51:57,054][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T04:51:57,055][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T04:51:57,055][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T04:51:57,055][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T04:51:57,056][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T04:51:57,056][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T04:51:57,056][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T04:51:57,057][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T04:51:57,057][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T04:51:57,057][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T04:51:57,058][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T04:51:57,058][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T04:51:57,058][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T04:51:57,059][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T04:51:57,059][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T04:51:57,060][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T04:51:57,060][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T04:51:57,060][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T04:51:57,061][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T04:51:57,061][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T04:51:57,062][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T04:51:57,110][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [12.6gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T04:51:57,111][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T04:51:57,194][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T04:52:04,781][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/3427] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T04:52:05,496][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T04:52:06,812][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T04:52:06,814][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T04:52:07,681][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T04:52:07,777][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T04:52:08,575][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T04:52:09,377][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T04:52:09,381][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T04:52:09,396][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T04:52:09,397][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T04:52:09,559][INFO ][o.e.t.TransportService   ] [node-1] publish_address {10.178.0.2:9300}, bound_addresses {10.178.0.2:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T04:52:10,021][INFO ][o.e.b.BootstrapChecks    ] [node-1] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2021-12-26T04:52:10,058][INFO ][o.e.c.c.Coordinator      ] [node-1] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T04:52:10,199][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{YrWkjiWvTWie3fy35tvhkA}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 22, version: 151, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{YrWkjiWvTWie3fy35tvhkA}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}
+[2021-12-26T04:52:10,292][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{YrWkjiWvTWie3fy35tvhkA}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]}, term: 22, version: 151, reason: Publication{term=22, version=151}
+[2021-12-26T04:52:10,394][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {10.178.0.2:9200}, bound_addresses {10.178.0.2:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T04:52:10,395][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T04:52:10,815][INFO ][o.e.l.LicenseService     ] [node-1] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T04:52:10,817][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Active license is now [BASIC]; Security is disabled
+[2021-12-26T04:52:10,817][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T04:52:10,830][INFO ][o.e.g.GatewayService     ] [node-1] recovered [5] indices into cluster_state
+[2021-12-26T04:52:11,470][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip databases
+[2021-12-26T04:52:11,471][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T04:52:11,730][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T04:52:11,732][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T04:52:11,733][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T04:52:12,292][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T04:52:12,406][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T04:52:12,625][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T04:52:12,716][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2021-12-26T04:52:12,959][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2021-12-26T04:52:13,118][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2021-12-26T04:52:13,934][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T04:52:56,949][INFO ][o.e.c.r.a.AllocationService] [node-1] updating number_of_replicas to [1] for indices [.geoip_databases, .ds-ilm-history-5-2021.12.26-000001, .ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001]
+[2021-12-26T04:52:56,950][INFO ][o.e.c.s.MasterService    ] [node-1] node-join[{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw} join existing leader], term: 22, version: 162, delta: added {{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw}}
+[2021-12-26T04:52:57,790][INFO ][o.e.c.s.ClusterApplierService] [node-1] added {{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw}}, term: 22, version: 162, reason: Publication{term=22, version=162}
+[2021-12-26T04:53:02,219][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T04:53:40,933][INFO ][o.e.c.s.MasterService    ] [node-1] node-join[{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw} join existing leader], term: 22, version: 172, delta: added {{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}
+[2021-12-26T04:53:41,837][INFO ][o.e.c.s.ClusterApplierService] [node-1] added {{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}, term: 22, version: 172, reason: Publication{term=22, version=172}
+[2021-12-26T04:54:39,667][INFO ][o.e.t.ClusterConnectionManager] [node-1] transport connection to [{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}] closed by remote
+[2021-12-26T04:54:39,674][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [GREEN] to [YELLOW] (reason: [{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw} reason: disconnected]).
+[2021-12-26T04:54:39,680][INFO ][o.e.c.s.MasterService    ] [node-1] node-left[{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw} reason: disconnected], term: 22, version: 179, delta: removed {{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}
+[2021-12-26T04:54:39,742][INFO ][o.e.c.s.ClusterApplierService] [node-1] removed {{node-3}{siXJRVXbSyeYY9nPUgdTwg}{i1qiahdERWK4hxI35nSO7Q}{10.178.0.4}{10.178.0.4:9301}{cdfhilmrstw}}, term: 22, version: 179, reason: Publication{term=22, version=179}
+[2021-12-26T04:54:39,765][INFO ][o.e.c.r.DelayedAllocationService] [node-1] scheduling reroute for delayed shards in [59.9s] (3 delayed shards)
+[2021-12-26T04:54:41,559][INFO ][o.e.t.ClusterConnectionManager] [node-1] transport connection to [{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw}] closed by remote
+[2021-12-26T04:54:41,563][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [YELLOW] to [RED] (reason: [{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw} reason: disconnected]).
+[2021-12-26T04:54:41,565][INFO ][o.e.c.r.a.AllocationService] [node-1] updating number_of_replicas to [0] for indices [.geoip_databases, .ds-ilm-history-5-2021.12.26-000001, .ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001]
+[2021-12-26T04:54:41,566][INFO ][o.e.c.s.MasterService    ] [node-1] node-left[{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw} reason: disconnected], term: 22, version: 180, delta: removed {{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw}}
+[2021-12-26T04:54:41,571][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{YrWkjiWvTWie3fy35tvhkA}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}], current []}, term: 22, version: 179, reason: becoming candidate: Publication.onCompletion(false)
+[2021-12-26T04:54:41,580][WARN ][o.e.c.NodeConnectionsService] [node-1] failed to connect to {node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw}{ml.machine_memory=3970011136, ml.max_open_jobs=512, xpack.installed=true, ml.max_jvm_size=536870912, transform.node=true} (tried [1] times)
+org.elasticsearch.transport.ConnectTransportException: [node-2][10.178.0.3:9300] connect_exception
+	at org.elasticsearch.transport.TcpTransport$ChannelsConnectedListener.onFailure(TcpTransport.java:1047) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.action.ActionListener.lambda$toBiConsumer$0(ActionListener.java:279) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.core.CompletableContext.lambda$addListener$0(CompletableContext.java:31) ~[elasticsearch-core-7.16.2.jar:7.16.2]
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162) ~[?:?]
+	at org.elasticsearch.core.CompletableContext.completeExceptionally(CompletableContext.java:46) ~[elasticsearch-core-7.16.2.jar:7.16.2]
+	at org.elasticsearch.transport.netty4.Netty4TcpChannel.lambda$addListener$0(Netty4TcpChannel.java:58) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[?:?]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) ~[?:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321) ~[?:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:620) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:583) ~[?:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[?:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) ~[?:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 10.178.0.3/10.178.0.3:9300
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[?:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[?:?]
+	... 7 more
+[2021-12-26T04:54:41,572][WARN ][o.e.c.s.MasterService    ] [node-1] failing [node-left[{node-2}{jQrijfdCSlmBxSd9BPWv9g}{Fy149sJGSz2EIqQgAk1EXg}{10.178.0.3}{10.178.0.3:9300}{cdfhilmrstw} reason: disconnected]]: failed to commit cluster state version [180]
+org.elasticsearch.cluster.coordination.FailedToCommitClusterStateException: publication failed
+	at org.elasticsearch.cluster.coordination.Coordinator$CoordinatorPublication$4.onFailure(Coordinator.java:1772) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ListenableFuture.notifyListenerDirectly(ListenableFuture.java:115) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ListenableFuture.addListener(ListenableFuture.java:55) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Coordinator$CoordinatorPublication.onCompletion(Coordinator.java:1679) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Publication.onPossibleCompletion(Publication.java:114) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Publication.onPossibleCommitFailure(Publication.java:165) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Publication.start(Publication.java:61) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Coordinator.publish(Coordinator.java:1380) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService.publish(MasterService.java:305) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:287) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService.access$100(MasterService.java:63) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:170) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:146) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:202) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:718) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:262) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:225) [elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: org.elasticsearch.cluster.coordination.FailedToCommitClusterStateException: non-failed nodes do not form a quorum
+	at org.elasticsearch.cluster.coordination.Publication.onPossibleCommitFailure(Publication.java:163) ~[elasticsearch-7.16.2.jar:7.16.2]
+	... 14 more
+[2021-12-26T04:54:41,585][ERROR][o.e.c.c.Coordinator      ] [node-1] unexpected failure during [node-left]
+org.elasticsearch.cluster.coordination.FailedToCommitClusterStateException: publication failed
+	at org.elasticsearch.cluster.coordination.Coordinator$CoordinatorPublication$4.onFailure(Coordinator.java:1772) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ListenableFuture.notifyListenerDirectly(ListenableFuture.java:115) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ListenableFuture.addListener(ListenableFuture.java:55) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Coordinator$CoordinatorPublication.onCompletion(Coordinator.java:1679) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Publication.onPossibleCompletion(Publication.java:114) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Publication.onPossibleCommitFailure(Publication.java:165) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Publication.start(Publication.java:61) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.coordination.Coordinator.publish(Coordinator.java:1380) ~[elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService.publish(MasterService.java:305) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:287) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService.access$100(MasterService.java:63) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:170) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:146) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:202) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:718) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:262) [elasticsearch-7.16.2.jar:7.16.2]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:225) [elasticsearch-7.16.2.jar:7.16.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: org.elasticsearch.cluster.coordination.FailedToCommitClusterStateException: non-failed nodes do not form a quorum
+	at org.elasticsearch.cluster.coordination.Publication.onPossibleCommitFailure(Publication.java:163) ~[elasticsearch-7.16.2.jar:7.16.2]
+	... 14 more
+[2021-12-26T04:54:42,876][INFO ][o.e.x.m.p.NativeController] [node-1] Native controller process has stopped - no new native processes can be started
+[2021-12-26T04:54:42,876][INFO ][o.e.n.Node               ] [node-1] stopping ...
+[2021-12-26T04:54:42,881][INFO ][o.e.x.w.WatcherService   ] [node-1] stopping watch service, reason [shutdown initiated]
+[2021-12-26T04:54:42,882][INFO ][o.e.x.w.WatcherLifeCycleService] [node-1] watcher has stopped and shutdown
+[2021-12-26T04:54:43,058][INFO ][o.e.n.Node               ] [node-1] stopped
+[2021-12-26T04:54:43,059][INFO ][o.e.n.Node               ] [node-1] closing ...
+[2021-12-26T04:54:43,059][WARN ][o.e.t.TransportService   ] [node-1] Transport response handler not found of id [762]
+[2021-12-26T04:54:43,078][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T04:54:43,079][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T04:54:43,079][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-11010195566925535056/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T04:54:43,080][INFO ][o.e.n.Node               ] [node-1] closed
