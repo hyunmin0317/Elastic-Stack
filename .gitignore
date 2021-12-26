@@ -1,8 +1,13 @@
-es-716/bin
-es-716/lib
-es-716/jdk
-es-716/modules
-es-716/plugins
+elasticsearch/bin
+elasticsearch/lib
+elasticsearch/jdk
+elasticsearch/modules
+elasticsearch/plugins
 
-kb-716/
+kibana/bin
+kibana/node
+kibana/node_modules
+kibana/src
+kibana/x-pack
+
 files/

@@ -1,1 +1,1 @@
-cat ../es-716/es.pid
+cat es.pid
