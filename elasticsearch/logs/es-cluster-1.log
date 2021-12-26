@@ -1,0 +1,501 @@
+[2021-12-26T03:02:20,212][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[24399], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T03:02:20,218][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T03:02:20,219][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-7994811968688997459, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T03:02:24,140][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T03:02:24,141][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T03:02:24,142][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T03:02:24,142][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T03:02:24,142][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T03:02:24,143][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T03:02:24,143][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T03:02:24,144][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T03:02:24,144][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T03:02:24,144][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T03:02:24,145][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T03:02:24,145][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T03:02:24,146][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T03:02:24,146][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T03:02:24,146][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T03:02:24,147][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T03:02:24,147][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T03:02:24,148][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T03:02:24,148][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T03:02:24,148][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T03:02:24,149][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T03:02:24,149][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T03:02:24,150][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T03:02:24,150][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T03:02:24,150][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T03:02:24,151][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T03:02:24,151][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T03:02:24,152][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T03:02:24,152][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T03:02:24,152][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T03:02:24,153][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T03:02:24,153][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T03:02:24,153][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T03:02:24,154][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T03:02:24,154][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T03:02:24,154][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T03:02:24,155][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T03:02:24,155][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T03:02:24,156][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T03:02:24,156][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T03:02:24,156][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T03:02:24,157][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T03:02:24,157][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T03:02:24,158][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T03:02:24,158][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T03:02:24,158][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T03:02:24,159][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T03:02:24,159][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T03:02:24,160][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T03:02:24,160][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T03:02:24,160][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T03:02:24,161][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T03:02:24,161][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T03:02:24,161][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T03:02:24,162][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T03:02:24,162][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T03:02:24,163][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T03:02:24,163][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T03:02:24,163][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T03:02:24,164][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T03:02:24,211][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [13.3gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T03:02:24,211][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T03:02:24,239][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T03:02:32,555][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/24596] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T03:02:33,444][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T03:02:34,625][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T03:02:34,629][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T03:02:35,593][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T03:02:35,705][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T03:02:36,400][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T03:02:37,184][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T03:02:37,185][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T03:02:37,198][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T03:02:37,199][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T03:02:37,358][INFO ][o.e.t.TransportService   ] [node-1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T03:02:37,504][WARN ][o.e.b.BootstrapChecks    ] [node-1] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65535]
+[2021-12-26T03:02:37,505][WARN ][o.e.b.BootstrapChecks    ] [node-1] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2021-12-26T03:02:37,505][WARN ][o.e.b.BootstrapChecks    ] [node-1] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2021-12-26T03:02:37,520][INFO ][o.e.c.c.ClusterBootstrapService] [node-1] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2021-12-26T03:02:40,527][INFO ][o.e.c.c.Coordinator      ] [node-1] setting initial configuration to VotingConfiguration{nK7uBO7aQOeCZLSFSe47PA}
+[2021-12-26T03:02:40,760][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{qCEg7AbaS-e1uWzJq1eVAw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{qCEg7AbaS-e1uWzJq1eVAw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2021-12-26T03:02:40,807][INFO ][o.e.c.c.CoordinationState] [node-1] cluster UUID set to [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T03:02:40,838][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{qCEg7AbaS-e1uWzJq1eVAw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2021-12-26T03:02:40,924][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T03:02:40,925][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T03:02:41,133][INFO ][o.e.g.GatewayService     ] [node-1] recovered [0] indices into cluster_state
+[2021-12-26T03:02:41,564][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.ml-anomalies-] for index patterns [.ml-anomalies-*]
+[2021-12-26T03:02:41,638][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.ml-stats] for index patterns [.ml-stats-*]
+[2021-12-26T03:02:41,718][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.ml-notifications-000002] for index patterns [.ml-notifications-000002]
+[2021-12-26T03:02:41,771][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.ml-state] for index patterns [.ml-state*]
+[2021-12-26T03:02:41,878][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [logs-mappings]
+[2021-12-26T03:02:42,070][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [logs-settings]
+[2021-12-26T03:02:42,195][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [synthetics-mappings]
+[2021-12-26T03:02:42,260][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [synthetics-settings]
+[2021-12-26T03:02:42,309][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [metrics-settings]
+[2021-12-26T03:02:42,360][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [metrics-mappings]
+[2021-12-26T03:02:42,423][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [data-streams-mappings]
+[2021-12-26T03:02:42,519][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.watch-history-13] for index patterns [.watcher-history-13*]
+[2021-12-26T03:02:42,578][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [ilm-history] for index patterns [ilm-history-5*]
+[2021-12-26T03:02:42,653][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.slm-history] for index patterns [.slm-history-5*]
+[2021-12-26T03:02:42,706][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [.deprecation-indexing-mappings]
+[2021-12-26T03:02:42,760][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding component template [.deprecation-indexing-settings]
+[2021-12-26T03:02:42,825][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+[2021-12-26T03:02:42,915][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+[2021-12-26T03:02:42,975][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+[2021-12-26T03:02:43,030][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+[2021-12-26T03:02:43,090][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+[2021-12-26T03:02:43,148][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [logs] for index patterns [logs-*-*]
+[2021-12-26T03:02:43,198][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [metrics] for index patterns [metrics-*-*]
+[2021-12-26T03:02:43,248][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [synthetics] for index patterns [synthetics-*-*]
+[2021-12-26T03:02:43,305][INFO ][o.e.c.m.MetadataIndexTemplateService] [node-1] adding index template [.deprecation-indexing-template] for index patterns [.logs-deprecation.*]
+[2021-12-26T03:02:43,350][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [ml-size-based-ilm-policy]
+[2021-12-26T03:02:43,412][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [logs]
+[2021-12-26T03:02:43,461][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [metrics]
+[2021-12-26T03:02:43,503][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [90-days-default]
+[2021-12-26T03:02:43,558][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [30-days-default]
+[2021-12-26T03:02:43,606][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [180-days-default]
+[2021-12-26T03:02:43,648][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [365-days-default]
+[2021-12-26T03:02:43,692][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [7-days-default]
+[2021-12-26T03:02:43,737][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [synthetics]
+[2021-12-26T03:02:43,782][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [watch-history-ilm-policy]
+[2021-12-26T03:02:43,827][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [ilm-history-ilm-policy]
+[2021-12-26T03:02:44,042][INFO ][o.e.l.LicenseService     ] [node-1] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T03:02:44,044][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Active license is now [BASIC]; Security is disabled
+[2021-12-26T03:02:44,045][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T03:02:44,052][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [slm-history-ilm-policy]
+[2021-12-26T03:02:44,108][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [.deprecation-indexing-ilm-policy]
+[2021-12-26T03:02:44,161][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [node-1] adding index lifecycle policy [.fleet-actions-results-ilm-policy]
+[2021-12-26T03:02:44,277][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip databases
+[2021-12-26T03:02:44,278][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T03:02:44,643][INFO ][o.e.c.m.MetadataCreateIndexService] [node-1] [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001] creating index, cause [initialize_data_stream], templates [.deprecation-indexing-template], shards [1]/[1]
+[2021-12-26T03:02:44,659][INFO ][o.e.c.r.a.AllocationService] [node-1] updating number_of_replicas to [0] for indices [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001]
+[2021-12-26T03:02:44,673][INFO ][o.e.c.m.MetadataCreateDataStreamService] [node-1] adding data stream [.logs-deprecation.elasticsearch-default] with write index [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001], backing indices [], and aliases []
+[2021-12-26T03:02:44,843][INFO ][o.e.x.i.IndexLifecycleTransition] [node-1] moving index [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [.deprecation-indexing-ilm-policy]
+[2021-12-26T03:02:44,935][INFO ][o.e.x.i.IndexLifecycleTransition] [node-1] moving index [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [.deprecation-indexing-ilm-policy]
+[2021-12-26T03:02:45,054][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T03:02:45,102][INFO ][o.e.x.i.IndexLifecycleTransition] [node-1] moving index [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [.deprecation-indexing-ilm-policy]
+[2021-12-26T03:02:45,207][INFO ][o.e.c.m.MetadataMappingService] [node-1] [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001/p-EzDxpLQxWUMIn8q81JOw] update_mapping [_doc]
+[2021-12-26T03:02:45,309][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip database [GeoLite2-ASN.mmdb]
+[2021-12-26T03:02:45,829][INFO ][o.e.c.m.MetadataCreateIndexService] [node-1] [.geoip_databases] creating index, cause [auto(bulk api)], templates [], shards [1]/[0]
+[2021-12-26T03:02:45,971][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.geoip_databases][0]]]).
+[2021-12-26T03:02:46,734][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T03:02:46,754][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updated geoip database [GeoLite2-ASN.mmdb]
+[2021-12-26T03:02:46,800][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip database [GeoLite2-City.mmdb]
+[2021-12-26T03:02:47,084][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:02:49,525][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T03:02:49,554][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updated geoip database [GeoLite2-City.mmdb]
+[2021-12-26T03:02:49,556][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip database [GeoLite2-Country.mmdb]
+[2021-12-26T03:02:49,616][INFO ][o.e.c.m.MetadataCreateIndexService] [node-1] [.ds-ilm-history-5-2021.12.26-000001] creating index, cause [initialize_data_stream], templates [ilm-history], shards [1]/[0]
+[2021-12-26T03:02:49,634][INFO ][o.e.c.m.MetadataCreateDataStreamService] [node-1] adding data stream [ilm-history-5] with write index [.ds-ilm-history-5-2021.12.26-000001], backing indices [], and aliases []
+[2021-12-26T03:02:49,883][INFO ][o.e.x.i.IndexLifecycleTransition] [node-1] moving index [.ds-ilm-history-5-2021.12.26-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [ilm-history-ilm-policy]
+[2021-12-26T03:02:50,014][INFO ][o.e.x.i.IndexLifecycleTransition] [node-1] moving index [.ds-ilm-history-5-2021.12.26-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [ilm-history-ilm-policy]
+[2021-12-26T03:02:50,125][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.ds-ilm-history-5-2021.12.26-000001][0]]]).
+[2021-12-26T03:02:50,322][INFO ][o.e.x.i.IndexLifecycleTransition] [node-1] moving index [.ds-ilm-history-5-2021.12.26-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [ilm-history-ilm-policy]
+[2021-12-26T03:02:50,557][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T03:02:50,577][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updated geoip database [GeoLite2-Country.mmdb]
+[2021-12-26T03:02:50,719][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:02:51,111][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T03:02:54,696][INFO ][o.e.x.m.p.NativeController] [node-1] Native controller process has stopped - no new native processes can be started
+[2021-12-26T03:02:54,697][INFO ][o.e.n.Node               ] [node-1] stopping ...
+[2021-12-26T03:02:54,701][INFO ][o.e.x.w.WatcherService   ] [node-1] stopping watch service, reason [shutdown initiated]
+[2021-12-26T03:02:54,701][INFO ][o.e.x.w.WatcherLifeCycleService] [node-1] watcher has stopped and shutdown
+[2021-12-26T03:02:54,783][INFO ][o.e.n.Node               ] [node-1] stopped
+[2021-12-26T03:02:54,784][INFO ][o.e.n.Node               ] [node-1] closing ...
+[2021-12-26T03:02:54,796][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:02:54,797][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:02:54,797][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-7994811968688997459/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T03:02:54,799][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T03:05:11,062][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[24856], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T03:05:11,068][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T03:05:11,069][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-16154608630552801931, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T03:05:15,036][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T03:05:15,036][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T03:05:15,037][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T03:05:15,037][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T03:05:15,037][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T03:05:15,037][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T03:05:15,038][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T03:05:15,038][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T03:05:15,038][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T03:05:15,039][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T03:05:15,039][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T03:05:15,039][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T03:05:15,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T03:05:15,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T03:05:15,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T03:05:15,040][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T03:05:15,041][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T03:05:15,041][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T03:05:15,041][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T03:05:15,042][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T03:05:15,042][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T03:05:15,042][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T03:05:15,043][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T03:05:15,043][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T03:05:15,043][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T03:05:15,044][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T03:05:15,044][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T03:05:15,044][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T03:05:15,045][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T03:05:15,045][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T03:05:15,045][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T03:05:15,046][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T03:05:15,046][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T03:05:15,046][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T03:05:15,047][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T03:05:15,047][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T03:05:15,047][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T03:05:15,048][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T03:05:15,048][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T03:05:15,048][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T03:05:15,049][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T03:05:15,049][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T03:05:15,049][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T03:05:15,050][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T03:05:15,050][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T03:05:15,050][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T03:05:15,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T03:05:15,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T03:05:15,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T03:05:15,051][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T03:05:15,052][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T03:05:15,052][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T03:05:15,052][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T03:05:15,053][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T03:05:15,053][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T03:05:15,053][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T03:05:15,053][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T03:05:15,054][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T03:05:15,054][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T03:05:15,055][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T03:05:15,103][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [13.2gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T03:05:15,104][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T03:05:15,196][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T03:05:23,095][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/24878] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T03:05:24,015][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T03:05:25,069][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T03:05:25,074][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T03:05:26,024][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T03:05:26,172][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T03:05:26,987][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T03:05:27,803][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T03:05:27,804][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T03:05:27,819][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T03:05:27,820][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T03:05:27,985][INFO ][o.e.t.TransportService   ] [node-1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T03:05:28,655][WARN ][o.e.b.BootstrapChecks    ] [node-1] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65535]
+[2021-12-26T03:05:28,656][WARN ][o.e.b.BootstrapChecks    ] [node-1] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2021-12-26T03:05:28,656][WARN ][o.e.b.BootstrapChecks    ] [node-1] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2021-12-26T03:05:28,658][INFO ][o.e.c.c.Coordinator      ] [node-1] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T03:05:28,671][INFO ][o.e.c.c.ClusterBootstrapService] [node-1] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2021-12-26T03:05:28,823][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{vSA648ThQM2iMO3t6L-IaA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 2, version: 63, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{vSA648ThQM2iMO3t6L-IaA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2021-12-26T03:05:28,923][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{vSA648ThQM2iMO3t6L-IaA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 2, version: 63, reason: Publication{term=2, version=63}
+[2021-12-26T03:05:29,001][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T03:05:29,002][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T03:05:29,486][INFO ][o.e.l.LicenseService     ] [node-1] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T03:05:29,488][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Active license is now [BASIC]; Security is disabled
+[2021-12-26T03:05:29,488][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T03:05:29,504][INFO ][o.e.g.GatewayService     ] [node-1] recovered [3] indices into cluster_state
+[2021-12-26T03:05:30,162][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip databases
+[2021-12-26T03:05:30,163][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T03:05:30,271][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.ds-ilm-history-5-2021.12.26-000001][0], [.geoip_databases][0]]]).
+[2021-12-26T03:05:30,333][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T03:05:30,335][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T03:05:30,336][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T03:05:30,831][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:05:31,041][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:05:31,344][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2021-12-26T03:05:31,587][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2021-12-26T03:05:31,703][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2021-12-26T03:05:32,315][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T03:05:43,519][INFO ][o.e.n.Node               ] [node-1] stopping ...
+[2021-12-26T03:05:43,523][INFO ][o.e.x.w.WatcherService   ] [node-1] stopping watch service, reason [shutdown initiated]
+[2021-12-26T03:05:43,525][INFO ][o.e.x.w.WatcherLifeCycleService] [node-1] watcher has stopped and shutdown
+[2021-12-26T03:05:43,526][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/24878] [Main.cc@174] ML controller exiting
+[2021-12-26T03:05:43,527][INFO ][o.e.x.m.p.NativeController] [node-1] Native controller process has stopped - no new native processes can be started
+[2021-12-26T03:05:43,661][INFO ][o.e.n.Node               ] [node-1] stopped
+[2021-12-26T03:05:43,662][INFO ][o.e.n.Node               ] [node-1] closing ...
+[2021-12-26T03:05:43,684][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:05:43,685][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:05:43,685][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-1] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-16154608630552801931/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T03:05:43,686][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T03:06:59,713][INFO ][o.e.n.Node               ] [node-new] version[7.16.2], pid[25003], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T03:06:59,726][INFO ][o.e.n.Node               ] [node-new] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T03:06:59,726][INFO ][o.e.n.Node               ] [node-new] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-13414272026578520046, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T03:07:03,665][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [aggs-matrix-stats]
+[2021-12-26T03:07:03,666][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [analysis-common]
+[2021-12-26T03:07:03,666][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [constant-keyword]
+[2021-12-26T03:07:03,666][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [frozen-indices]
+[2021-12-26T03:07:03,667][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [ingest-common]
+[2021-12-26T03:07:03,667][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [ingest-geoip]
+[2021-12-26T03:07:03,668][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [ingest-user-agent]
+[2021-12-26T03:07:03,668][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [kibana]
+[2021-12-26T03:07:03,669][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [lang-expression]
+[2021-12-26T03:07:03,669][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [lang-mustache]
+[2021-12-26T03:07:03,669][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [lang-painless]
+[2021-12-26T03:07:03,670][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [legacy-geo]
+[2021-12-26T03:07:03,670][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [mapper-extras]
+[2021-12-26T03:07:03,670][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [mapper-version]
+[2021-12-26T03:07:03,671][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [parent-join]
+[2021-12-26T03:07:03,671][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [percolator]
+[2021-12-26T03:07:03,672][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [rank-eval]
+[2021-12-26T03:07:03,672][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [reindex]
+[2021-12-26T03:07:03,673][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [repositories-metering-api]
+[2021-12-26T03:07:03,673][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [repository-encrypted]
+[2021-12-26T03:07:03,673][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [repository-url]
+[2021-12-26T03:07:03,674][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [runtime-fields-common]
+[2021-12-26T03:07:03,674][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [search-business-rules]
+[2021-12-26T03:07:03,674][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [searchable-snapshots]
+[2021-12-26T03:07:03,675][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [snapshot-repo-test-kit]
+[2021-12-26T03:07:03,675][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [spatial]
+[2021-12-26T03:07:03,676][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [transform]
+[2021-12-26T03:07:03,676][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [transport-netty4]
+[2021-12-26T03:07:03,677][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [unsigned-long]
+[2021-12-26T03:07:03,677][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [vector-tile]
+[2021-12-26T03:07:03,677][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [vectors]
+[2021-12-26T03:07:03,678][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [wildcard]
+[2021-12-26T03:07:03,678][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-aggregate-metric]
+[2021-12-26T03:07:03,679][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-analytics]
+[2021-12-26T03:07:03,679][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-async]
+[2021-12-26T03:07:03,679][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-async-search]
+[2021-12-26T03:07:03,680][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-autoscaling]
+[2021-12-26T03:07:03,680][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-ccr]
+[2021-12-26T03:07:03,680][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-core]
+[2021-12-26T03:07:03,681][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-data-streams]
+[2021-12-26T03:07:03,681][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-deprecation]
+[2021-12-26T03:07:03,682][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-enrich]
+[2021-12-26T03:07:03,682][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-eql]
+[2021-12-26T03:07:03,682][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-fleet]
+[2021-12-26T03:07:03,683][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-graph]
+[2021-12-26T03:07:03,683][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-identity-provider]
+[2021-12-26T03:07:03,684][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-ilm]
+[2021-12-26T03:07:03,684][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-logstash]
+[2021-12-26T03:07:03,684][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-ml]
+[2021-12-26T03:07:03,685][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-monitoring]
+[2021-12-26T03:07:03,685][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-ql]
+[2021-12-26T03:07:03,685][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-rollup]
+[2021-12-26T03:07:03,686][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-security]
+[2021-12-26T03:07:03,686][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-shutdown]
+[2021-12-26T03:07:03,686][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-sql]
+[2021-12-26T03:07:03,687][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-stack]
+[2021-12-26T03:07:03,687][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-text-structure]
+[2021-12-26T03:07:03,688][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-voting-only-node]
+[2021-12-26T03:07:03,688][INFO ][o.e.p.PluginsService     ] [node-new] loaded module [x-pack-watcher]
+[2021-12-26T03:07:03,689][INFO ][o.e.p.PluginsService     ] [node-new] no plugins loaded
+[2021-12-26T03:07:03,736][INFO ][o.e.e.NodeEnvironment    ] [node-new] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [13.1gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T03:07:03,737][INFO ][o.e.e.NodeEnvironment    ] [node-new] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T03:07:03,827][INFO ][o.e.n.Node               ] [node-new] node name [node-new], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T03:07:11,432][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-new] [controller/25200] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T03:07:12,124][INFO ][o.e.x.s.a.s.FileRolesStore] [node-new] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T03:07:13,349][INFO ][o.e.i.g.ConfigDatabases  ] [node-new] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T03:07:13,354][INFO ][o.e.i.g.DatabaseNodeService] [node-new] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T03:07:14,277][INFO ][o.e.t.NettyAllocator     ] [node-new] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T03:07:14,410][INFO ][o.e.d.DiscoveryModule    ] [node-new] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T03:07:15,120][INFO ][o.e.g.DanglingIndicesState] [node-new] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T03:07:15,816][INFO ][o.e.n.Node               ] [node-new] initialized
+[2021-12-26T03:07:15,817][INFO ][o.e.n.Node               ] [node-new] starting ...
+[2021-12-26T03:07:15,829][INFO ][o.e.x.s.c.f.PersistentCache] [node-new] persistent cache index loaded
+[2021-12-26T03:07:15,830][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-new] deprecation component started
+[2021-12-26T03:07:15,961][INFO ][o.e.t.TransportService   ] [node-new] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T03:07:16,608][WARN ][o.e.b.BootstrapChecks    ] [node-new] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65535]
+[2021-12-26T03:07:16,609][WARN ][o.e.b.BootstrapChecks    ] [node-new] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2021-12-26T03:07:16,609][WARN ][o.e.b.BootstrapChecks    ] [node-new] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2021-12-26T03:07:16,610][INFO ][o.e.c.c.Coordinator      ] [node-new] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T03:07:16,624][INFO ][o.e.c.c.ClusterBootstrapService] [node-new] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2021-12-26T03:07:16,763][INFO ][o.e.c.s.MasterService    ] [node-new] elected-as-master ([1] nodes joined)[{node-new}{nK7uBO7aQOeCZLSFSe47PA}{3sD4K4wPR6CmsAYPBRF3_Q}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 3, version: 73, delta: master node changed {previous [], current [{node-new}{nK7uBO7aQOeCZLSFSe47PA}{3sD4K4wPR6CmsAYPBRF3_Q}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2021-12-26T03:07:16,867][INFO ][o.e.c.s.ClusterApplierService] [node-new] master node changed {previous [], current [{node-new}{nK7uBO7aQOeCZLSFSe47PA}{3sD4K4wPR6CmsAYPBRF3_Q}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 3, version: 73, reason: Publication{term=3, version=73}
+[2021-12-26T03:07:16,966][INFO ][o.e.h.AbstractHttpServerTransport] [node-new] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T03:07:16,967][INFO ][o.e.n.Node               ] [node-new] started
+[2021-12-26T03:07:17,404][INFO ][o.e.l.LicenseService     ] [node-new] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T03:07:17,406][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-new] Active license is now [BASIC]; Security is disabled
+[2021-12-26T03:07:17,407][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-new] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T03:07:17,423][INFO ][o.e.g.GatewayService     ] [node-new] recovered [3] indices into cluster_state
+[2021-12-26T03:07:18,087][INFO ][o.e.i.g.GeoIpDownloader  ] [node-new] updating geoip databases
+[2021-12-26T03:07:18,088][INFO ][o.e.i.g.GeoIpDownloader  ] [node-new] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T03:07:18,098][INFO ][o.e.c.r.a.AllocationService] [node-new] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.ds-ilm-history-5-2021.12.26-000001][0], [.geoip_databases][0], [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T03:07:18,135][INFO ][o.e.i.g.DatabaseNodeService] [node-new] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T03:07:18,138][INFO ][o.e.i.g.DatabaseNodeService] [node-new] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T03:07:18,138][INFO ][o.e.i.g.DatabaseNodeService] [node-new] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T03:07:18,709][INFO ][o.e.i.g.DatabaseNodeService] [node-new] successfully reloaded changed geoip database file [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:07:18,870][INFO ][o.e.i.g.DatabaseNodeService] [node-new] successfully reloaded changed geoip database file [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:07:19,229][INFO ][o.e.i.g.GeoIpDownloader  ] [node-new] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2021-12-26T03:07:19,467][INFO ][o.e.i.g.GeoIpDownloader  ] [node-new] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2021-12-26T03:07:19,681][INFO ][o.e.i.g.GeoIpDownloader  ] [node-new] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2021-12-26T03:07:20,055][INFO ][o.e.i.g.DatabaseNodeService] [node-new] successfully reloaded changed geoip database file [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T03:07:22,220][INFO ][o.e.x.m.p.NativeController] [node-new] Native controller process has stopped - no new native processes can be started
+[2021-12-26T03:07:22,222][INFO ][o.e.n.Node               ] [node-new] stopping ...
+[2021-12-26T03:07:22,226][INFO ][o.e.x.w.WatcherService   ] [node-new] stopping watch service, reason [shutdown initiated]
+[2021-12-26T03:07:22,227][INFO ][o.e.x.w.WatcherLifeCycleService] [node-new] watcher has stopped and shutdown
+[2021-12-26T03:07:22,432][INFO ][o.e.n.Node               ] [node-new] stopped
+[2021-12-26T03:07:22,432][INFO ][o.e.n.Node               ] [node-new] closing ...
+[2021-12-26T03:07:22,456][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-new] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:07:22,456][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-new] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:07:22,456][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [node-new] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-13414272026578520046/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
+[2021-12-26T03:07:22,458][INFO ][o.e.n.Node               ] [node-new] closed
+[2021-12-26T03:07:34,415][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[25441], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T03:07:34,421][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T03:07:34,421][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-10266726739890153503, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T03:07:38,407][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T03:07:38,408][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T03:07:38,408][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T03:07:38,408][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T03:07:38,409][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T03:07:38,409][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T03:07:38,409][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T03:07:38,410][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T03:07:38,410][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T03:07:38,410][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T03:07:38,411][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T03:07:38,411][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T03:07:38,411][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T03:07:38,412][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T03:07:38,412][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T03:07:38,413][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T03:07:38,413][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T03:07:38,413][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T03:07:38,414][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T03:07:38,414][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T03:07:38,414][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T03:07:38,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T03:07:38,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T03:07:38,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T03:07:38,415][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T03:07:38,416][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T03:07:38,416][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T03:07:38,416][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T03:07:38,417][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T03:07:38,417][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T03:07:38,417][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T03:07:38,418][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T03:07:38,418][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T03:07:38,418][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T03:07:38,418][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T03:07:38,419][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T03:07:38,419][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T03:07:38,419][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T03:07:38,420][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T03:07:38,420][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T03:07:38,420][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T03:07:38,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T03:07:38,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T03:07:38,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T03:07:38,421][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T03:07:38,422][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T03:07:38,422][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T03:07:38,422][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T03:07:38,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T03:07:38,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T03:07:38,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T03:07:38,423][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T03:07:38,424][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T03:07:38,424][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T03:07:38,424][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T03:07:38,425][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T03:07:38,425][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T03:07:38,425][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T03:07:38,425][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T03:07:38,426][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T03:07:38,473][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [13gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T03:07:38,474][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T03:07:38,556][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T03:07:46,551][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/25463] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T03:07:47,349][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T03:07:48,531][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T03:07:48,535][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T03:07:49,448][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T03:07:49,544][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T03:07:50,218][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T03:07:51,006][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T03:07:51,007][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T03:07:51,020][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T03:07:51,021][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T03:07:51,185][INFO ][o.e.t.TransportService   ] [node-1] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T03:07:51,655][WARN ][o.e.b.BootstrapChecks    ] [node-1] max file descriptors [4096] for elasticsearch process is too low, increase to at least [65535]
+[2021-12-26T03:07:51,655][WARN ][o.e.b.BootstrapChecks    ] [node-1] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2021-12-26T03:07:51,656][WARN ][o.e.b.BootstrapChecks    ] [node-1] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2021-12-26T03:07:51,657][INFO ][o.e.c.c.Coordinator      ] [node-1] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T03:07:51,671][INFO ][o.e.c.c.ClusterBootstrapService] [node-1] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2021-12-26T03:07:51,886][INFO ][o.e.c.s.MasterService    ] [node-1] elected-as-master ([1] nodes joined)[{node-1}{nK7uBO7aQOeCZLSFSe47PA}{xa2NKcR5RLyFJuvrA1DQDA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 4, version: 82, delta: master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{xa2NKcR5RLyFJuvrA1DQDA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2021-12-26T03:07:51,985][INFO ][o.e.c.s.ClusterApplierService] [node-1] master node changed {previous [], current [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{xa2NKcR5RLyFJuvrA1DQDA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 4, version: 82, reason: Publication{term=4, version=82}
+[2021-12-26T03:07:52,078][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T03:07:52,079][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T03:07:52,522][INFO ][o.e.l.LicenseService     ] [node-1] license [5e2f13df-b2e1-439f-90a0-4a52ff3d3277] mode [basic] - valid
+[2021-12-26T03:07:52,524][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Active license is now [BASIC]; Security is disabled
+[2021-12-26T03:07:52,525][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [node-1] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security.
+[2021-12-26T03:07:52,536][INFO ][o.e.g.GatewayService     ] [node-1] recovered [3] indices into cluster_state
+[2021-12-26T03:07:53,110][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] updating geoip databases
+[2021-12-26T03:07:53,111][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2021-12-26T03:07:53,124][INFO ][o.e.c.r.a.AllocationService] [node-1] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.geoip_databases][0], [.ds-ilm-history-5-2021.12.26-000001][0], [.ds-.logs-deprecation.elasticsearch-default-2021.12.26-000001][0]]]).
+[2021-12-26T03:07:53,166][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb.tmp.gz]
+[2021-12-26T03:07:53,175][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb.tmp.gz]
+[2021-12-26T03:07:53,176][INFO ][o.e.i.g.DatabaseNodeService] [node-1] downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb.tmp.gz]
+[2021-12-26T03:07:53,845][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-Country.mmdb]
+[2021-12-26T03:07:54,085][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-ASN.mmdb]
+[2021-12-26T03:07:54,404][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2021-12-26T03:07:54,588][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2021-12-26T03:07:54,780][INFO ][o.e.i.g.GeoIpDownloader  ] [node-1] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2021-12-26T03:07:55,506][INFO ][o.e.i.g.DatabaseNodeService] [node-1] successfully reloaded changed geoip database file [/tmp/elasticsearch-10266726739890153503/geoip-databases/nK7uBO7aQOeCZLSFSe47PA/GeoLite2-City.mmdb]
