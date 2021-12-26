@@ -1,7 +1,7 @@
 cluster.name: "es-cluster-1"
 node.name: "node-1"
-path.data: "/home/choihm9903/elastic/elasticsearch/data"
-path.logs: "/home/choihm9903/elastic/elasticsearch/logs"
+#path.data: "/home/choihm9903/elastic/elasticsearch/data"
+#path.logs: "/home/choihm9903/elastic/elasticsearch/logs"
 
 network.host: ["_local_", "_site_"]
 # network.host: "10.178.0.2"
@@ -9,8 +9,8 @@ network.host: ["_local_", "_site_"]
 discovery.seed_hosts: ["elastic-1", "elastic-2", "elastic-3"]
 cluster.initial_master_nodes: ["node-1", "node-2", "node-3"]
 
-xpack.security.enabled: true
-xpack.security.transport.ssl.enabled: true
+#xpack.security.enabled: true
+#xpack.security.transport.ssl.enabled: true
 
 #path:
 #        data: "/home/choihm9903/elastic/elasticsearch/data"

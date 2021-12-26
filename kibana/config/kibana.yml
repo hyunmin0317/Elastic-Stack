@@ -1,3 +1,11 @@
+
+server.host: "elastic-1"
+server.name: "my-kibana"
+elasticsearch.hosts: ["http://elastic-1:9200"]
+
+#elasticsearch.username: "kibana_system"
+#elasticsearch.password: ""
+
 # Kibana is served by a back end server. This setting specifies the port to use.
 #server.port: 5601
 
