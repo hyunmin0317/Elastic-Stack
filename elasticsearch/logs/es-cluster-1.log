@@ -2911,3 +2911,151 @@ io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 100
 [2021-12-26T05:16:36,705][INFO ][o.e.n.Node               ] [node-1] stopped
 [2021-12-26T05:16:36,706][INFO ][o.e.n.Node               ] [node-1] closing ...
 [2021-12-26T05:16:36,719][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T05:19:46,623][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[5055], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T05:19:46,630][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T05:19:46,630][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-716980894443702516, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2021-12-26T05:19:50,838][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [aggs-matrix-stats]
+[2021-12-26T05:19:50,838][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [analysis-common]
+[2021-12-26T05:19:50,839][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [constant-keyword]
+[2021-12-26T05:19:50,839][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [frozen-indices]
+[2021-12-26T05:19:50,840][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-common]
+[2021-12-26T05:19:50,840][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-geoip]
+[2021-12-26T05:19:50,841][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [ingest-user-agent]
+[2021-12-26T05:19:50,841][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [kibana]
+[2021-12-26T05:19:50,841][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-expression]
+[2021-12-26T05:19:50,842][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-mustache]
+[2021-12-26T05:19:50,842][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [lang-painless]
+[2021-12-26T05:19:50,843][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [legacy-geo]
+[2021-12-26T05:19:50,843][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-extras]
+[2021-12-26T05:19:50,844][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [mapper-version]
+[2021-12-26T05:19:50,844][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [parent-join]
+[2021-12-26T05:19:50,845][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [percolator]
+[2021-12-26T05:19:50,845][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [rank-eval]
+[2021-12-26T05:19:50,845][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [reindex]
+[2021-12-26T05:19:50,846][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repositories-metering-api]
+[2021-12-26T05:19:50,846][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-encrypted]
+[2021-12-26T05:19:50,847][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [repository-url]
+[2021-12-26T05:19:50,847][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [runtime-fields-common]
+[2021-12-26T05:19:50,847][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [search-business-rules]
+[2021-12-26T05:19:50,848][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [searchable-snapshots]
+[2021-12-26T05:19:50,848][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [snapshot-repo-test-kit]
+[2021-12-26T05:19:50,849][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [spatial]
+[2021-12-26T05:19:50,849][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transform]
+[2021-12-26T05:19:50,849][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [transport-netty4]
+[2021-12-26T05:19:50,850][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [unsigned-long]
+[2021-12-26T05:19:50,850][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vector-tile]
+[2021-12-26T05:19:50,851][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [vectors]
+[2021-12-26T05:19:50,851][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [wildcard]
+[2021-12-26T05:19:50,851][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-aggregate-metric]
+[2021-12-26T05:19:50,852][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-analytics]
+[2021-12-26T05:19:50,853][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async]
+[2021-12-26T05:19:50,854][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-async-search]
+[2021-12-26T05:19:50,854][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-autoscaling]
+[2021-12-26T05:19:50,855][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ccr]
+[2021-12-26T05:19:50,855][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-core]
+[2021-12-26T05:19:50,855][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-data-streams]
+[2021-12-26T05:19:50,856][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-deprecation]
+[2021-12-26T05:19:50,856][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-enrich]
+[2021-12-26T05:19:50,857][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-eql]
+[2021-12-26T05:19:50,857][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-fleet]
+[2021-12-26T05:19:50,857][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-graph]
+[2021-12-26T05:19:50,858][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-identity-provider]
+[2021-12-26T05:19:50,858][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ilm]
+[2021-12-26T05:19:50,858][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-logstash]
+[2021-12-26T05:19:50,859][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ml]
+[2021-12-26T05:19:50,859][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-monitoring]
+[2021-12-26T05:19:50,859][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-ql]
+[2021-12-26T05:19:50,860][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-rollup]
+[2021-12-26T05:19:50,860][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-security]
+[2021-12-26T05:19:50,860][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-shutdown]
+[2021-12-26T05:19:50,861][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-sql]
+[2021-12-26T05:19:50,861][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-stack]
+[2021-12-26T05:19:50,861][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-text-structure]
+[2021-12-26T05:19:50,862][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-voting-only-node]
+[2021-12-26T05:19:50,862][INFO ][o.e.p.PluginsService     ] [node-1] loaded module [x-pack-watcher]
+[2021-12-26T05:19:50,863][INFO ][o.e.p.PluginsService     ] [node-1] no plugins loaded
+[2021-12-26T05:19:50,936][INFO ][o.e.e.NodeEnvironment    ] [node-1] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [12.5gb], net total_space [19.7gb], types [xfs]
+[2021-12-26T05:19:50,936][INFO ][o.e.e.NodeEnvironment    ] [node-1] heap size [512mb], compressed ordinary object pointers [true]
+[2021-12-26T05:19:51,037][INFO ][o.e.n.Node               ] [node-1] node name [node-1], node ID [nK7uBO7aQOeCZLSFSe47PA], cluster name [es-cluster-1], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2021-12-26T05:19:58,927][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [node-1] [controller/5252] [Main.cc@122] controller (64 bit): Version 7.16.2 (Build 77e5cf03d1077d) Copyright (c) 2021 Elasticsearch BV
+[2021-12-26T05:19:59,927][INFO ][o.e.x.s.a.Realms         ] [node-1] license mode is [trial], currently licensed security realms are [reserved/reserved,file/default_file,native/default_native]
+[2021-12-26T05:19:59,942][INFO ][o.e.x.s.a.s.FileRolesStore] [node-1] parsed [0] roles from file [/home/choihm9903/elastic/es-716/config/roles.yml]
+[2021-12-26T05:20:01,125][INFO ][o.e.i.g.ConfigDatabases  ] [node-1] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/home/choihm9903/elastic/es-716/config/ingest-geoip] for changes
+[2021-12-26T05:20:01,128][INFO ][o.e.i.g.DatabaseNodeService] [node-1] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-716980894443702516/geoip-databases/nK7uBO7aQOeCZLSFSe47PA]
+[2021-12-26T05:20:02,026][INFO ][o.e.t.NettyAllocator     ] [node-1] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]
+[2021-12-26T05:20:02,123][INFO ][o.e.d.DiscoveryModule    ] [node-1] using discovery type [zen] and seed hosts providers [settings]
+[2021-12-26T05:20:02,799][INFO ][o.e.g.DanglingIndicesState] [node-1] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2021-12-26T05:20:03,555][INFO ][o.e.n.Node               ] [node-1] initialized
+[2021-12-26T05:20:03,556][INFO ][o.e.n.Node               ] [node-1] starting ...
+[2021-12-26T05:20:03,572][INFO ][o.e.x.s.c.f.PersistentCache] [node-1] persistent cache index loaded
+[2021-12-26T05:20:03,573][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [node-1] deprecation component started
+[2021-12-26T05:20:03,733][INFO ][o.e.t.TransportService   ] [node-1] publish_address {10.178.0.2:9300}, bound_addresses {10.178.0.2:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2021-12-26T05:20:04,152][INFO ][o.e.b.BootstrapChecks    ] [node-1] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2021-12-26T05:20:04,155][INFO ][o.e.c.c.Coordinator      ] [node-1] cluster UUID [2AXJqMW2R6GFfRpqcx2quQ]
+[2021-12-26T05:20:14,166][WARN ][o.e.c.c.ClusterFormationFailureHelper] [node-1] master not discovered or elected yet, an election requires at least 2 nodes with ids from [nK7uBO7aQOeCZLSFSe47PA, jQrijfdCSlmBxSd9BPWv9g, siXJRVXbSyeYY9nPUgdTwg], have only discovered non-quorum [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]; discovery will continue using [10.178.0.3:9300, 10.178.0.4:9300] from hosts providers and [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}] from last-known cluster state; node term 22, last-accepted version 179 in term 22
+[2021-12-26T05:20:14,346][WARN ][o.e.t.OutboundHandler    ] [node-1] send message failed [channel: Netty4TcpChannel{localAddress=/10.178.0.2:41576, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}]
+io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 10000ms
+	at io.netty.handler.ssl.SslHandler$7.run(SslHandler.java:2114) [netty-handler-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) [netty-transport-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T05:20:14,355][WARN ][o.e.t.OutboundHandler    ] [node-1] sending transport message [Request{internal:tcp/handshake}{1}{false}{false}{true}] of size [58] on [Netty4TcpChannel{localAddress=/10.178.0.2:41576, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}] took [10005ms] which is above the warn threshold of [5000ms] with success [false]
+[2021-12-26T05:20:24,168][WARN ][o.e.c.c.ClusterFormationFailureHelper] [node-1] master not discovered or elected yet, an election requires at least 2 nodes with ids from [nK7uBO7aQOeCZLSFSe47PA, jQrijfdCSlmBxSd9BPWv9g, siXJRVXbSyeYY9nPUgdTwg], have only discovered non-quorum [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]; discovery will continue using [10.178.0.3:9300, 10.178.0.4:9300] from hosts providers and [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}] from last-known cluster state; node term 22, last-accepted version 179 in term 22
+[2021-12-26T05:20:25,189][WARN ][o.e.t.OutboundHandler    ] [node-1] send message failed [channel: Netty4TcpChannel{localAddress=/10.178.0.2:41630, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}]
+io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 10000ms
+	at io.netty.handler.ssl.SslHandler$7.run(SslHandler.java:2114) [netty-handler-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) [netty-transport-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T05:20:25,191][WARN ][o.e.t.OutboundHandler    ] [node-1] sending transport message [Request{internal:tcp/handshake}{2}{false}{false}{true}] of size [58] on [Netty4TcpChannel{localAddress=/10.178.0.2:41630, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}] took [10005ms] which is above the warn threshold of [5000ms] with success [false]
+[2021-12-26T05:20:34,171][WARN ][o.e.c.c.ClusterFormationFailureHelper] [node-1] master not discovered or elected yet, an election requires at least 2 nodes with ids from [nK7uBO7aQOeCZLSFSe47PA, jQrijfdCSlmBxSd9BPWv9g, siXJRVXbSyeYY9nPUgdTwg], have only discovered non-quorum [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]; discovery will continue using [10.178.0.3:9300, 10.178.0.4:9300] from hosts providers and [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}] from last-known cluster state; node term 22, last-accepted version 179 in term 22
+[2021-12-26T05:20:34,202][WARN ][o.e.n.Node               ] [node-1] timed out while waiting for initial discovery state - timeout: 30s
+[2021-12-26T05:20:34,218][INFO ][o.e.h.AbstractHttpServerTransport] [node-1] publish_address {10.178.0.2:9200}, bound_addresses {10.178.0.2:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2021-12-26T05:20:34,219][INFO ][o.e.n.Node               ] [node-1] started
+[2021-12-26T05:20:36,187][WARN ][o.e.t.OutboundHandler    ] [node-1] send message failed [channel: Netty4TcpChannel{localAddress=/10.178.0.2:41664, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}]
+io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 10000ms
+	at io.netty.handler.ssl.SslHandler$7.run(SslHandler.java:2114) [netty-handler-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) [netty-transport-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T05:20:36,188][WARN ][o.e.t.OutboundHandler    ] [node-1] sending transport message [Request{internal:tcp/handshake}{3}{false}{false}{true}] of size [58] on [Netty4TcpChannel{localAddress=/10.178.0.2:41664, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}] took [10005ms] which is above the warn threshold of [5000ms] with success [false]
+[2021-12-26T05:20:44,172][WARN ][o.e.c.c.ClusterFormationFailureHelper] [node-1] master not discovered or elected yet, an election requires at least 2 nodes with ids from [nK7uBO7aQOeCZLSFSe47PA, jQrijfdCSlmBxSd9BPWv9g, siXJRVXbSyeYY9nPUgdTwg], have only discovered non-quorum [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]; discovery will continue using [10.178.0.3:9300, 10.178.0.4:9300] from hosts providers and [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}] from last-known cluster state; node term 22, last-accepted version 179 in term 22
+[2021-12-26T05:20:47,191][WARN ][o.e.t.OutboundHandler    ] [node-1] send message failed [channel: Netty4TcpChannel{localAddress=/10.178.0.2:41702, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}]
+io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 10000ms
+	at io.netty.handler.ssl.SslHandler$7.run(SslHandler.java:2114) [netty-handler-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) [netty-transport-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.66.Final.jar:4.1.66.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[2021-12-26T05:20:47,193][WARN ][o.e.t.OutboundHandler    ] [node-1] sending transport message [Request{internal:tcp/handshake}{4}{false}{false}{true}] of size [58] on [Netty4TcpChannel{localAddress=/10.178.0.2:41702, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}] took [10006ms] which is above the warn threshold of [5000ms] with success [false]
+[2021-12-26T05:20:54,174][WARN ][o.e.c.c.ClusterFormationFailureHelper] [node-1] master not discovered or elected yet, an election requires at least 2 nodes with ids from [nK7uBO7aQOeCZLSFSe47PA, jQrijfdCSlmBxSd9BPWv9g, siXJRVXbSyeYY9nPUgdTwg], have only discovered non-quorum [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}]; discovery will continue using [10.178.0.3:9300, 10.178.0.4:9300] from hosts providers and [{node-1}{nK7uBO7aQOeCZLSFSe47PA}{Shem5dR0RYmaCqlOl7hcqw}{10.178.0.2}{10.178.0.2:9300}{cdfhilmrstw}] from last-known cluster state; node term 22, last-accepted version 179 in term 22
+[2021-12-26T05:20:56,013][INFO ][o.e.x.m.p.NativeController] [node-1] Native controller process has stopped - no new native processes can be started
+[2021-12-26T05:20:56,014][INFO ][o.e.n.Node               ] [node-1] stopping ...
+[2021-12-26T05:20:56,019][INFO ][o.e.x.w.WatcherService   ] [node-1] stopping watch service, reason [shutdown initiated]
+[2021-12-26T05:20:56,020][INFO ][o.e.x.w.WatcherLifeCycleService] [node-1] watcher has stopped and shutdown
+[2021-12-26T05:20:56,130][WARN ][o.e.t.OutboundHandler    ] [node-1] sending transport message [Request{internal:tcp/handshake}{5}{false}{false}{true}] of size [58] on [Netty4TcpChannel{localAddress=/10.178.0.2:41728, remoteAddress=elastic-3/10.178.0.4:9300, profile=default}] took [8004ms] which is above the warn threshold of [5000ms] with success [false]
+[2021-12-26T05:20:56,140][INFO ][o.e.n.Node               ] [node-1] stopped
+[2021-12-26T05:20:56,140][INFO ][o.e.n.Node               ] [node-1] closing ...
+[2021-12-26T05:20:56,154][INFO ][o.e.n.Node               ] [node-1] closed
+[2021-12-26T05:24:17,648][INFO ][o.e.n.Node               ] [node-1] version[7.16.2], pid[5435], build[default/tar/2b937c44140b6559905130a8650c64dbd0879cfb/2021-12-18T19:42:46.604893745Z], OS[Linux/3.10.0-1160.49.1.el7.x86_64/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.1/17.0.1+12]
+[2021-12-26T05:24:17,654][INFO ][o.e.n.Node               ] [node-1] JVM home [/home/choihm9903/elastic/es-716/jdk], using bundled JDK [true]
+[2021-12-26T05:24:17,654][INFO ][o.e.n.Node               ] [node-1] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Xms512m, -Xmx512m, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-5742793539441136208, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/home/choihm9903/elastic/es-716, -Des.path.conf=/home/choihm9903/elastic/es-716/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
