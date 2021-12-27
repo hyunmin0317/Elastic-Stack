@@ -1,0 +1,153 @@
+# _analyze API
+
+# _analyze API를 이용해서 텍스트 분석
+GET _analyze
+{
+  "text": "The quick brown fox jumps over the lazy dog",
+  "tokenizer": "whitespace",
+  "filter": [
+    "lowercase",
+    "stop",
+    "snowball"
+  ]
+}
+
+# my_index2 인덱스의 message 필드에 snowball 애널라이저 적용
+PUT my_index2
+{
+  "mappings": {
+    "properties": {
+      "message": {
+        "type": "text",
+        "analyzer": "snowball"
+      }
+    }
+  }
+}
+
+# my_index2에 jumps를 포함하는 도큐먼트 입력
+PUT my_index2/_doc/1
+{
+  "message": "The quick brown fox jumps over the lazy dog"
+}
+
+# jump의 다른 형도 검색
+GET my_index2/_search
+{
+  "query": {
+    "match": {
+      "message": "jumping"
+    }
+  }
+}
+
+# jump만 검색
+GET my_index2/_search
+{
+  "query": {
+    "term": {
+      "message": "jump"
+    }
+  }
+}
+
+# my_index3 인덱스의 settings 안에 my_custom_analyzer 생성
+PUT my_index3
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "my_custom_analyzer": {
+            "type": "custom",
+            "tokenizer": "whitespace",
+            "filter": [
+              "lowercase",
+              "stop",
+              "snowball"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+# _analyzer API로 my_index2에서 my_custom_analyzer 사용
+GET my_index3/_analyze
+{
+  "analyzer": "my_custom_analyzer",
+  "text": [
+    "The quick brown fox jumps over the lazy dog"
+  ]
+}
+
+# my_stop_filter 를 생성 후 my_custom_analyzer 에서 사용
+DELETE my_index3
+
+PUT my_index3
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "my_custom_analyzer": {
+            "type": "custom",
+            "tokenizer": "whitespace",
+            "filter": [
+              "lowercase",
+              "my_stop_filter",
+              "snowball"
+            ]
+          }
+        },
+        "filter": {
+          "my_stop_filter": {
+            "type": "stop",
+            "stopwords": [
+              "brown"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+# message 필드에 my_custom_analyzer 애널라이저 적용
+PUT my_index3
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "my_custom_analyzer": {
+            "type": "custom",
+            "tokenizer": "whitespace",
+            "filter": [
+              "lowercase",
+              "my_stop_filter",
+              "snowball"
+            ]
+          }
+        },
+        "filter": {
+          "my_stop_filter": {
+            "type": "stop",
+            "stopwords": [
+              "brown"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "message": {
+        "type": "text",
+        "analyzer": "my_custom_analyzer"
+      }
+    }
+  }
+}
