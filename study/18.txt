@@ -1,0 +1,125 @@
+# standard 토크나이저로 "동해물과 백두산이" 문장 분석
+GET _analyze
+{
+  "tokenizer": "standard",
+  "text": [
+    "동해물과 백두산이"
+  ]
+}
+
+# nori_tokenizer 토크나이저로 "동해물과 백두산이" 문장 분석
+GET _analyze
+{
+  "analyzer": "nori",
+  "text": ["동해물과 백두산이"]
+}
+
+DELETE my_nori
+
+# my_nori 인덱스에 "해물" 사전을 추가한 my_nori_tokenizer 생성
+PUT my_nori
+{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "my_nori_tokenizer": {
+          "type": "nori_tokenizer",
+          "user_dictionary_rules": [
+            "해물"
+          ]
+        }
+      }
+    }
+  }
+}
+
+# my_nori_tokenizer 토크나이저로 "동해물과 백두산이" 문장 분석
+GET my_nori/_analyze
+{
+  "tokenizer": "my_nori_tokenizer",
+  "text": ["동해물과 백두산이"]
+}
+
+# decompound_mode 모드를 각각 none, discard, mixed 로 설정한 토크나이저 설정
+PUT my_nori
+{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "nori_none": {
+          "type": "nori_tokenizer",
+          "decompound_mode": "none"
+        },
+        "nori_discard": {
+          "type": "nori_tokenizer",
+          "decompound_mode": "discard"
+        },
+        "nori_mixed": {
+          "type": "nori_tokenizer",
+          "decompound_mode": "mixed"
+        }
+      }
+    }
+  }
+}
+
+GET my_nori/_analyze
+{
+  "tokenizer": "nori_none",
+  "text": ["동해물과 백두산이"]
+}
+
+# stoptags 디폴트 값
+"stoptags": [
+  "E", "IC", "J", "MAG", "MAJ",
+  "MM", "SP", "SSC", "SSO", "SC",
+  "SE", "XPN", "XSA", "XSN", "XSV",
+  "UNA", "NA", "VSV"
+]
+
+# my_pos 인덱스에 수사(NR)을 제거하는 my_pos_f 토큰필터 지정
+PUT my_pos
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "filter": {
+          "my_pos_f": {
+            "type": "nori_part_of_speech",
+            "stoptags": [
+              "NR"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+# my_pos_f 토큰필터로 "다섯아이가" 분석
+GET my_pos/_analyze
+{
+  "tokenizer": "nori_tokenizer",
+  "filter": [
+    "my_pos_f"
+  ],
+  "text": "다섯아이가"
+}
+
+# nori_readingform 토큰필터
+GET _analyze
+{
+  "tokenizer": "nori_tokenizer",
+  "filter": [
+    "nori_readingform"
+  ],
+  "text": "春夏秋冬"
+}
+
+# "explain": true 옵션
+GET _analyze
+{
+  "tokenizer": "nori_tokenizer",
+  "text": "동해물과 백두산이",
+  "explain": true
+}
