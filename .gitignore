@@ -10,4 +10,15 @@ kibana/node_modules
 kibana/src
 kibana/x-pack
 
+logstash/bin
+logstash/jdk
+logstash/logstash-core
+logstash/logstash-core-plugin-api
+logstash/x-pack
+logstash/config
+logstash/lib
+logstash/tools
+logstash/modules
+logstash/vendor
+
 files/
