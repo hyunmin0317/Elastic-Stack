@@ -1,0 +1,72 @@
+# FULL TEXT QUERY
+POST my_index/_bulk
+{"index":{"_id":1}}
+{"message":"The quick brown fox"}
+{"index":{"_id":2}}
+{"message":"The quick brown fox jumps over the lazy dog"}
+{"index":{"_id":3}}
+{"message":"The quick brown fox jumps over the quick dog"}
+{"index":{"_id":4}}
+{"message":"Brown fox brown dog"}
+{"index":{"_id":5}}
+{"message":"Lazy jumping dog"}
+
+# match all
+GET my_index/_search
+
+# match
+GET my_index/_search
+{
+  "query": {
+    "match": {
+      "message": "quick dog"
+    }
+  }
+}
+
+# match and
+GET my_index/_search
+{
+  "query": {
+    "match": {
+      "message": {
+        "query": "quick dog",
+        "operator": "and"
+      }
+    }
+  }
+}
+
+# match_phrase
+GET my_index/_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "lazy dog"
+    }
+  }
+}
+
+# match_phrase sloop
+GET my_index/_search
+{
+  "query": {
+    "match_phrase": {
+      "message": {
+        "query": "lazy dog",
+        "slop": 1
+      }
+    }
+  }
+}
+
+# query_string
+GET my_index/_search
+{
+  "query": {
+    "query_string": {
+      "default_field": "message",
+      "query": "(jumping AND lazy) OR \"quick dog\""
+    }
+  }
+}
