@@ -1,4 +1,4 @@
-elasticsearch/bin
+sticsearch/bin
 elasticsearch/lib
 elasticsearch/jdk
 elasticsearch/modules
@@ -20,5 +20,11 @@ logstash/lib
 logstash/tools
 logstash/modules
 logstash/vendor
+
+filebeat/kibana
+filebeat/filebeat
+filebeat/module
+filebeat/module.d
+filebeat/NOTICE.txt
 
 files/
