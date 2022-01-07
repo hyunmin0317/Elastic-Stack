@@ -1,0 +1,189 @@
+# BOOL QUERY
+
+# 단어 "quick"과 구문 "lazy dog"가 포함된 모든 문서를 검색하는 쿼리
+GET my_index/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "message": "quick"
+          }
+        },
+        {
+          "match_phrase": {
+            "message": "lazy dog"
+          }
+        }
+      ]
+    }
+  }
+}
+
+# 단어 "quick" 그리고 구문 "lazy dog"가 하나도 포함되지 않은 문서를 검색하는 쿼리
+GET my_index/_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        {
+          "match": {
+            "message": "quick"
+          }
+        },
+        {
+          "match_phrase": {
+            "message": "lazy dog"
+          }
+        }
+      ]
+    }
+  }
+}
+
+# SHOULD
+
+# match 쿼리로 fox 를 포함하고 있는 도큐먼트를 검색 한 결과
+GET my_index/_search
+{
+  "query": {
+    "match": {
+      "message": "fox"
+    }
+  }
+}
+
+# 이 결과들 중 lazy 가 포함된 결과에 가중치를 줘서 상위로 올리고 싶으면 다음과 같이 should 안에 lazy 를 찾는 검색을 추가
+GET my_index/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "message": "fox"
+          }
+        }
+      ],
+      "should": [
+        {
+          "match": {
+            "message": "lazy"
+          }
+        }
+      ]
+    }
+  }
+}
+
+# EXACT VALUE
+
+# match 쿼리로 fox 검색
+GET my_index/_search
+{
+  "query": {
+    "match": {
+      "message": "fox"
+    }
+  }
+}
+
+# match 쿼리로 fox와 quick 검색
+GET my_index/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "message": "fox"
+          }
+        },
+        {
+          "match": {
+            "message": "quick"
+          }
+        }
+      ]
+    }
+  }
+}
+
+# must로 fox 및 filter로 qucik 검색
+GET my_index/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "message": "fox"
+          }
+        }
+      ],
+      "filter": [
+        {
+          "match": {
+            "message": "quick"
+          }
+        }
+      ]
+    }
+  }
+}
+
+# RANGE QUERY
+
+# bulk 명령으로 phone 인덱스 추가
+POST phones/_bulk
+{"index":{"_id":1}}
+{"model":"Samsung GalaxyS 5","price":475,"date":"2014-02-24"}
+{"index":{"_id":2}}
+{"model":"Samsung GalaxyS 6","price":795,"date":"2015-03-15"}
+{"index":{"_id":3}}
+{"model":"Samsung GalaxyS 7","price":859,"date":"2016-02-21"}
+{"index":{"_id":4}}
+{"model":"Samsung GalaxyS 8","price":959,"date":"2017-03-29"}
+{"index":{"_id":5}}
+{"model":"Samsung GalaxyS 9","price":1059,"date":"2018-02-25"}
+
+# price 값이 700 이상 900 미만인 데이터 검색
+# gte, gt, lte, lt
+GET phones/_search
+{
+  "query": {
+    "range": {
+      "price": {
+        "gte": 700,
+        "lt": 900
+      }
+    }
+  }
+}
+
+# date 값이 2016-01-01 이후인 데이터 검색
+GET phones/_search
+{
+  "query": {
+    "range": {
+      "date": {
+        "gt": "2016-01-01"
+      }
+    }
+  }
+}
+
+# date 값이 2016-01-01 ~ 2018-01-01 사이의 데이터 검색
+GET phones/_search
+{
+  "query": {
+    "range": {
+      "date": {
+        "gt": "31/12/2015",
+        "lt": "2018",
+        "format": "dd/MM/yyyy||yyyy"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+GET _cluster/settings
+
+PUT _cluster/settings
+{
+  "persistent" : {
+    "xpack" : {
+      "monitoring" : {
+        "collection" : {
+          "enabled" : null
+        }
+      }
+    }
+  }
+}
+
+
+GET _cat 
+GET _cat/nodes
+GET _cat/nodes?v&h=ip,name,node.role
+
+GET _cat/indices
+GET _cat/indices?v&h=health,index,docs.count,pri,rep
+GET _cat/shards/books
+
+
+GET books
+DELETE books
+
+PUT /books
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1
+  }
+}
+
+PUT books/_settings
+{
+  "number_of_replicas": 1
+}

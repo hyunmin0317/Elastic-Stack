@@ -1,0 +1,215 @@
+# my_date 인덱스 선언
+PUT my_date
+{
+  "mappings": {
+    "properties": {
+      "date_val": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy/MM/dd||epoch_millis"
+      }
+    }
+  }
+}
+
+PUT my_date/_doc/1
+{
+  "date": "2019-06-12T17:13:40"
+}
+
+PUT my_date/_doc/2
+{
+  "date": "2020-08-20"
+}
+
+PUT my_date/_doc/3
+{
+  "date": 1568332800000
+}
+
+GET my_date/_mapping
+
+# Object
+PUT movie/_doc/1
+{
+  "characters": {
+    "name": "Iron Man",
+    "age": 46,
+    "side": "superhero"
+  }
+}
+
+PUT movie/_doc/2
+{
+  "title": "The Avengers",
+  "characters": [
+    {
+      "name": "Iron Man",
+      "side": "superhero"
+    },
+    {
+      "name": "Loki",
+      "side": "villain"
+    }
+  ]
+}
+
+PUT movie/_doc/3
+{
+  "title": "Avengers: Infinity War",
+  "characters": [
+    {
+      "name": "Loki",
+      "side": "superhero"
+    },
+    {
+      "name": "Thanos",
+      "side": "villain"
+    }
+  ]
+}
+
+PUT movie
+{
+  "mappings": {
+    "properties": {
+      "characters": {
+        "properties": {
+          "name": {
+            "type": "text"
+          },
+          "age": {
+            "type": "byte"
+          },
+          "side": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET movie/_search
+GET movie/_search
+{
+  "query": {
+    "match": {
+      "characters.name": "Iron Man"
+    }
+  }
+}
+GET movie/_search
+{
+  "query": {
+    "nested": {
+      "path": "characters",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "characters.name": "Loki"
+              }
+            },
+            {
+              "match": {
+                "characters.side": "villain"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+# Geo 위치 정보
+PUT my_locations/_doc/1
+{
+  "location": {
+    "lat": 41.12,
+    "lon": -71.34
+  }
+}
+
+PUT my_index/_doc/2
+{
+  "location": "41.12,-71.34"
+}
+
+PUT my_index/_doc/3
+{
+  "location": "drm3btev3e86"
+}
+
+PUT my_index/_doc/4
+{
+  "location": [
+    -71.34,
+    41.12
+  ]
+}
+
+PUT my_geo
+{
+  "mappings": {
+    "properties": {
+      "location": {
+        "type": "geo_point"
+      }
+    }
+  }
+}
+
+PUT my_geo/_doc/1
+{
+  "location": {
+    "lat": 41.12,
+    "lon": -71.34
+  }
+}
+
+DELETE my_geo
+GET my_geo/_mapping
+GET my_geo/_search
+
+PUT my_geo/_bulk
+{"index":{"_id":"1"}}
+{"station":"강남","location":{"lon":127.027926,"lat":37.497175},"line":"2호선"}
+{"index":{"_id":"2"}}
+{"station":"종로3가","location":{"lon":126.991806,"lat":37.571607},"line":"3호선"}
+{"index":{"_id":"3"}}
+{"station":"여의도","location":{"lon":126.924191,"lat":37.521624},"line":"5호선"}
+{"index":{"_id":"4"}}
+{"station":"서울역","location":{"lon":126.972559,"lat":37.554648},"line":"1호선"}
+
+GET my_geo/_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "bottom_right": {
+          "lat": 37.4899,
+          "lon": 127.0388
+        },
+        "top_left": {
+          "lat": 37.5779,
+          "lon": 126.9617
+        }
+      }
+    }
+  }
+}
+
+GET my_geo/_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "5km",
+      "location": {
+        "lat": 37.5358,
+        "lon": 126.9559
+      }
+    }
+  }
+}

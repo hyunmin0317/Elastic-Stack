@@ -1,0 +1,3 @@
+GET _cat/indices
+
+GET logstash-*/_search
