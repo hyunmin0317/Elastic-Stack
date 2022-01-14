@@ -29,33 +29,33 @@ filebeat/NOTICE.txt
 
 files/
 
-elasticstack/elasticsearch/bin
-elasticstack/elasticsearch/lib
-elasticstack/elasticsearch/jdk
-elasticstack/elasticsearch/modules
-elasticstack/elasticsearch/plugins
+elastic-stack/elasticsearch/bin
+elastic-stack/elasticsearch/lib
+elastic-stack/elasticsearch/jdk
+elastic-stack/elasticsearch/modules
+elastic-stack/elasticsearch/plugins
 
-elasticstack/kibana/bin
-elasticstack/kibana/node
-elasticstack/kibana/node_modules
-elasticstack/kibana/src
-elasticstack/kibana/x-pack
+elastic-stack/kibana/bin
+elastic-stack/kibana/node
+elastic-stack/kibana/node_modules
+elastic-stack/kibana/src
+elastic-stack/kibana/x-pack
 
-elasticstack/logstash/bin
-elasticstack/logstash/jdk
-elasticstack/logstash/logstash-core
-elasticstack/logstash/logstash-core-plugin-api
-elasticstack/logstash/x-pack
-elasticstack/logstash/config
-elasticstack/logstash/lib
-elasticstack/logstash/tools
-elasticstack/logstash/modules
-elasticstack/logstash/vendor
+elastic-stack/logstash/bin
+elastic-stack/logstash/jdk
+elastic-stack/logstash/logstash-core
+elastic-stack/logstash/logstash-core-plugin-api
+elastic-stack/logstash/x-pack
+elastic-stack/logstash/config
+elastic-stack/logstash/lib
+elastic-stack/logstash/tools
+elastic-stack/logstash/modules
+elastic-stack/logstash/vendor
 
-elasticstack/filebeat/kibana
-elasticstack/filebeat/filebeat
-elasticstack/filebeat/module
-elasticstack/filebeat/module.d
-elasticstack/filebeat/NOTICE.txt
+elastic-stack/filebeat/kibana
+elastic-stack/filebeat/filebeat
+elastic-stack/filebeat/module
+elastic-stack/filebeat/module.d
+elastic-stack/filebeat/NOTICE.txt
 
-elasticstack/files/
+elastic-stack/files/
