@@ -1,4 +1,4 @@
-FROM bitnami/elasticsearch-curator:5.8.
+FROM bitnami/elasticsearch-curator:5.8.1
 
 USER root
 
