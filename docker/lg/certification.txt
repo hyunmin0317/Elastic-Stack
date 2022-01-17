@@ -5,3 +5,5 @@ JgXT6AgcqeyTmZaM9Hqc
 ** 재부팅 할때마다 실행 **
 wsl -d docker-desktop
 sysctl -w vm.max_map_count=262144
+
+curl -X GET "https://localhost:9200/" --key certificates/elasticsearch-ca.pem  -k -u elastic
