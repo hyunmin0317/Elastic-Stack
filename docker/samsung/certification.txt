@@ -1,7 +1,0 @@
-** ID & PASSWORD **
-elastic
-o0qDGn9tLlCvOtekzJ6F
-
-** 재부팅 할때마다 실행 **
-wsl -d docker-desktop
-sysctl -w vm.max_map_count=262144

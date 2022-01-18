@@ -1,6 +1,0 @@
-source/*
-data/*
-node_modules
-*license*
-*internal*
-logstash*
