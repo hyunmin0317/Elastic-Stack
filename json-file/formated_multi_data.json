@@ -1,0 +1,6 @@
+{"index": { "_index": "sport", "_type": "soccer", "_id": 3 } }
+{"user": "park", "score": 12}
+{"index": { "_index": "sport", "_type": "soccer", "_id": 4 } }
+{"user": "kim", "score": 24}
+{"index": { "_index": "sport", "_type": "soccer", "_id": 5 } }
+{"user": "choi", "score": 36}

@@ -1,0 +1,4 @@
+{ "index" : { "_index" : "classes", "_type" : "class", "_id" : "1" } }
+{"title" : "Machine Learning","Professor" : "YoungJun Park","major" : "Computer Science","semester" : ["spring", "fall"],"student_count" : 100,"unit" : 3,"rating" : 5, "submit_date" : "2020-01-02", "school_location" : {"lat" : 36.00, "lon" : -120.00}}
+{ "index" : { "_index" : "classes", "_type" : "class", "_id" : "2" } }
+{"title" : "Java","Professor" : "Bae","major" : "Computer Science","semester" : ["spring"],"student_count" : 50,"unit" : 4,"rating" : 6, "submit_date" : "2021-01-02", "school_location" : {"lat" : 36.00, "lon" : -120.00}}
