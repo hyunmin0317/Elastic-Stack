@@ -23,7 +23,7 @@ for i in range(1, 21):
         place_x = float(row.find('LAT').text)
         place_y = float(row.find('LNT').text)
         doc = {
-            "_index": "seoul_wifi2",
+            "_index": "seoul_wifi",
             "_source": {
                 "gu_nm": gu_nm,
                 "place_nm": place_nm,
