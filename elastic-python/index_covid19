@@ -1,0 +1,23 @@
+PUT covid19
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "korean": {
+          "tokenizer": "nori_tokenizer"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "date": {
+        "type": "date",
+        "format": "yyyy.MM.dd.HH"},
+      "today": {"type": "integer"},
+      "confirmed": {"type": "integer"},
+      "death": {"type": "integer"},
+      "recover": {"type": "integer"}
+    }
+  }
+}
