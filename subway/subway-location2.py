@@ -15,7 +15,7 @@ def subway_data():
     return data
 
 if '__main__':
-    es = Elasticsearch(['http://3.36.70.108:9200/'])
+    es = Elasticsearch(['http://52.78.107.255:9200/'])
 
     data = subway_data()
     docs = []
