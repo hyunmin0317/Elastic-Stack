@@ -8,6 +8,9 @@ network.host: "10.178.0.5"
 # network-host 설정-2
 network.host: "_site_"
 
+# network-host 설정-3
+network.host: ["_local_", "_site_"]
+
 # discovery, master-node 설정
 discovery.seed_hosts: ["elastic-1"]
 cluster.initial_master_nodes: ["node-1"]

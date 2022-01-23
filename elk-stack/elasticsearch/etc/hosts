@@ -1,0 +1,4 @@
+# Internal IP 호스트명
+10.178.0.5  elastic-1
+10.178.0.6  elastic-2
+10.178.0.7  elastic-3

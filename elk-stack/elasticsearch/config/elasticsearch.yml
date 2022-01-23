@@ -1,0 +1,5 @@
+cluster.name: "es-cluster-1"
+node.name: "node-1"   # node-2, node-3 은 각각에게 맞는 노드명 지정
+network.host: ["_local_", "_site_"]
+discovery.seed_hosts: ["elastic-1", "elastic-2", "elastic-3"]
+cluster.initial_master_nodes: ["node-1", "node-2", "node-3"]
