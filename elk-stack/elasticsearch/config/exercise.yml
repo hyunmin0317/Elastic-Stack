@@ -2,6 +2,16 @@
 cluster.name: "es-cluster-1"
 node.name: "node-1"
 
+# network-host 설정-1
+network.host: "10.178.0.5"
+
+# network-host 설정-2
+network.host: "_site_"
+
+# discovery, master-node 설정
+discovery.seed_hosts: ["elastic-1"]
+cluster.initial_master_nodes: ["node-1"]
+
 # data, logs 경로 지정-1
 path.data: "/home/choihm9903/data"
 path.logs: "/home/choihm9903/logs"
