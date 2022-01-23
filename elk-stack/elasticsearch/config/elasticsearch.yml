@@ -1,0 +1,7 @@
+# cluster, node 이름 지정
+cluster.name: "es-cluster-1"
+node.name: "node-1"
+
+# data, logs 경로 지정
+path.data: "/home/choihm9903/data"
+path.log: "/home/choihm9903/logs"
