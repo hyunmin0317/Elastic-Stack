@@ -1,0 +1,3 @@
+server.host: "elastic-3"
+server.name: "my-kibana"
+elasticsearch.hosts: ["http://elastic-3:9200"]

@@ -1,0 +1,1 @@
+pm2 start ~/kibana/src/cli/cli.js --name kibana
