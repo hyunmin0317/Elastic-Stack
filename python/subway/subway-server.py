@@ -15,11 +15,12 @@ def subway_data():
     return data
 
 if '__main__':
-    es = Elasticsearch(['http://3.34.90.128:9200/'])
+    es = Elasticsearch(['http://34.64.136.175:9200/'])
 
     data = subway_data()
     docs = []
 
+    i = 0
     for row in data:
         line = row[0]
         station = row[1]
@@ -33,6 +34,7 @@ if '__main__':
 
             doc = {
                 "_index": "seoul_subway",
+                "_id": i,
                 "_source": {
                     "line": line,
                     "station": station,
@@ -43,6 +45,7 @@ if '__main__':
                     }
                 }
             }
+            i += 1
             docs.append(doc)
 
 res = helpers.bulk(es, docs)

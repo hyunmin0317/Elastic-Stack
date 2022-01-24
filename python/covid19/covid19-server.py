@@ -2,7 +2,7 @@ import urllib.request
 from xml.etree.ElementTree import fromstring, ElementTree
 from elasticsearch import Elasticsearch, helpers
 
-es = Elasticsearch(['http://3.34.90.128:9200/'])
+es = Elasticsearch(['http://34.64.136.175:9200/'])
 
 docs = []
 
@@ -13,6 +13,7 @@ xml_str = response.read().decode('utf-8')
 tree = ElementTree(fromstring(xml_str))
 root = tree.getroot()
 
+i = 0
 for row in root.iter("row"):
     date = row.find('S_DT').text
     today = int(row.find('N_HJ').text)
@@ -21,6 +22,7 @@ for row in root.iter("row"):
     recover = int(row.find('RECOVER').text)
     doc = {
         "_index": "covid19",
+        "_id": i,
         "_source": {
             "date": date,
             "today": today,
@@ -30,6 +32,7 @@ for row in root.iter("row"):
         }
     }
     docs.append(doc)
+    i += 1
 
 res = helpers.bulk(es, docs)
 print("END")

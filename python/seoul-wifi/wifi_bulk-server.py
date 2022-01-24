@@ -2,10 +2,11 @@ import urllib.request
 from xml.etree.ElementTree import fromstring, ElementTree
 from elasticsearch import Elasticsearch, helpers
 
-es = Elasticsearch(['http://3.34.90.128:9200/'])
+es = Elasticsearch(['http://34.64.136.175:9200/'])
 
 docs = []
 
+j = 0
 for i in range(1, 21):
     iStart = (i - 1) * 1000 + 1
     iEnd = i * 1000
@@ -24,6 +25,7 @@ for i in range(1, 21):
         place_y = float(row.find('LNT').text)
         doc = {
             "_index": "seoul_wifi",
+            "_id": j,
             "_source": {
                 "gu_nm": gu_nm,
                 "place_nm": place_nm,
@@ -34,6 +36,7 @@ for i in range(1, 21):
             }
         }
         docs.append(doc)
+        j += 1
     print("END", iStart, "~", iEnd)
 
 res = helpers.bulk(es, docs)
