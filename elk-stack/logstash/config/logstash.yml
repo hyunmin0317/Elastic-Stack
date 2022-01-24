@@ -1,0 +1,2 @@
+# logstash config 파일 수정시 자동으로 재시작
+config.reload.automatic: true
