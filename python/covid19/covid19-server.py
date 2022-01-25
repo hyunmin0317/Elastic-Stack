@@ -2,11 +2,11 @@ import urllib.request
 from xml.etree.ElementTree import fromstring, ElementTree
 from elasticsearch import Elasticsearch, helpers
 
-es = Elasticsearch(['http://34.64.136.175:9200/'])
+es = Elasticsearch(['http://34.64.167.42:9200/'])
 
 docs = []
 
-url = 'http://openapi.seoul.go.kr:8088/547171685163686f35324270474f6e/xml/TbCorona19CountStatus/1/365/'
+url = 'http://openapi.seoul.go.kr:8088/547171685163686f35324270474f6e/xml/TbCorona19CountStatus/1/400/'
 response = urllib.request.urlopen(url)
 xml_str = response.read().decode('utf-8')
 
