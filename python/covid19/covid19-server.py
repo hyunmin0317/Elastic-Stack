@@ -2,7 +2,7 @@ import urllib.request
 from xml.etree.ElementTree import fromstring, ElementTree
 from elasticsearch import Elasticsearch, helpers
 
-es = Elasticsearch(['http://34.64.167.42:9200/'])
+es = Elasticsearch(['http://34.64.143.223:9200/'])
 
 docs = []
 

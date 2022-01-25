@@ -1,4 +1,4 @@
-PUT covid19_sample
+PUT covid19_logstash
 {
   "settings": {
     "analysis": {
@@ -11,11 +11,11 @@ PUT covid19_sample
   },
   "mappings": {
     "properties": {
-      "S_DT": {
+      "date": {
         "type": "date",
         "format": "yyyy.MM.dd.HH"},
-      "N_HJ": {"type": "integer"},
-      "T_HJ": {"type": "integer"},
+      "today": {"type": "integer"},
+      "confirmed": {"type": "integer"},
       "DEATH": {"type": "integer"},
       "RECOVER": {"type": "integer"}
     }
