@@ -16,8 +16,8 @@ PUT covid19_logstash
         "format": "yyyy.MM.dd.HH"},
       "today": {"type": "integer"},
       "confirmed": {"type": "integer"},
-      "DEATH": {"type": "integer"},
-      "RECOVER": {"type": "integer"}
+      "death": {"type": "integer"},
+      "recover": {"type": "integer"}
     }
   }
 }
