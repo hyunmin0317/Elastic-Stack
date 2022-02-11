@@ -1,8 +1,27 @@
-import csv
 import urllib.request
 from xml.etree.ElementTree import fromstring, ElementTree
 from elasticsearch import Elasticsearch, helpers
+import csv
 from datetime import datetime, timedelta
+
+es = Elasticsearch(['http://3.34.219.4:9200/'])
+
+def covid19():
+    seoul = {"JONGNOADD":"종로구", "JUNGGUADD":"중구", "YONGSANADD":"용산구", "SEONGDONGADD":"성동구", "GWANGJINADD":"광진구", "DDMADD":"동대문구", "JUNGNANGADD":"중랑구", "SEONGBUKADD":"성북구", "GANGBUKADD":"강북구", "DOBONGADD":"도봉구", "NOWONADD":"노원구", "EPADD":"은평구", "SDMADD":"서대문구", "MAPOADD":"마포구", "YANGCHEONADD":"양천구", "GANGSEOADD":"강서구", "GUROADD":"구로구", "GEUMCHEONADD":"금천구", "YDPADD":"영등포구", "DONGJAKADD":"동작구", "GWANAKADD":"관악구", "SEOCHOADD":"서초구", "GANGNAMADD":"강남구", "SONGPAADD":"송파구", "GANGDONGADD":"강동구", "ETCADD":"기타"}
+    covid = {}
+
+    url = 'http://openapi.seoul.go.kr:8088/547171685163686f35324270474f6e/xml/TbCorona19CountStatusJCG/1/1/'
+    response = urllib.request.urlopen(url)
+    xml_str = response.read().decode('utf-8')
+
+    tree = ElementTree(fromstring(xml_str))
+    root = tree.getroot()
+
+    for row in root.iter("row"):
+        for r in row:
+            if r.tag in seoul:
+                covid[seoul[r.tag]] = int(r.text)
+    return covid
 
 def date():
     for i in range(100):
@@ -49,12 +68,13 @@ def subway_data():
     f.close()
     return data
 
-if '__main__':
+def update_station():
     url = 'http://openapi.seoul.go.kr:8088/547171685163686f35324270474f6e/xml/CardSubwayStatsNew/1/600/'+date()
     es = Elasticsearch(['http://15.165.109.114:9200/'])
 
     data = subway_data()
     staion_info = station_data()
+    covid = covid19()
     docs = []
     stations = []
 
@@ -86,13 +106,15 @@ if '__main__':
                     move = ride + alight
                     place_x = info['place_x']
                     place_y = info['place_y']
+                    region = staion_info[station]
 
                     doc = {
-                        "_index": "station",
+                        "_index": "station-covid19",
                         "_id": station,
                         "_source": {
                             "line": line,
-                            "region": staion_info[station],
+                            "region": region,
+                            "confirmed": covid[region],
                             "station": station,
                             "location": {
                                 "lat": place_x,

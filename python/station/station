@@ -1,4 +1,4 @@
-PUT station
+PUT station-covid19
 {
   "settings": {
     "analysis": {
@@ -13,10 +13,12 @@ PUT station
     "properties": {
       "line": {"type": "keyword"},
       "region": {"type": "keyword"},
+      "confirmed": {"type": "integer"},
       "station": {"type": "keyword"},
       "location": {"type": "geo_point"},
       "ride": {"type": "integer"},
-      "alight": {"type": "integer"}
+      "alight": {"type": "integer"},
+      "move": {"type": "integer"}
     }
   }
 }
