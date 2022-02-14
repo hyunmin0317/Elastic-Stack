@@ -1,0 +1,19 @@
+PUT realtime-subway
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "korean": {
+          "tokenizer": "nori_tokenizer"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "recptnDt": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss.S"}
+    }
+  }
+}
