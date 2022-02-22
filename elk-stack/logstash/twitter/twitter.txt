@@ -1,0 +1,16 @@
+API Key
+Et1m2IrzSLiBcZUdspCUvjCpa
+
+API Key Secret
+EHSQ5ERixCcH8hW8ZLdAjaCQ0GnDfBASYwXkLq9hvn6Rleu3hP
+
+Bears Token
+AAAAAAAAAAAAAAAAAAAAAFT8ZQEAAAAAqP0ijM4VWQLC6BIuVpw%2B0fXEiUU%3DgoUXsER0p5yhQwV67n8LyhX5qRndqhDa1fqt7QI0fYoGsIyaMS
+
+Access Token
+1495916003775053832-b5saTpVnAzdwyAZ2SQQMJjkA54HMv8
+
+Access Token Secret
+ASTpViMV8GzCrlaYYtrkoktc85x6stUoVl5zcdA4OCs9B
+
+pip install tweepy==3.10.0
