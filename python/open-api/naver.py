@@ -1,10 +1,13 @@
 import json
 import urllib.request
 from datetime import datetime, timedelta
+
+from dateutil.relativedelta import relativedelta
 from elasticsearch import Elasticsearch, helpers
 
 def naver_API(date):
-    last = date - timedelta(365)
+    delta = relativedelta(years=5)
+    last = date - delta
     today = date.strftime("%Y-%m-%d")
     last_year = last.strftime("%Y-%m-%d")
 
@@ -43,11 +46,11 @@ def naver_NFT():
     for data in list:
         date = data['period']
         doc = {
-            "_index": "naver_nft",
-            "_id": date,
+            "_index": "nft_search",
+            "_id": "naver_"+date,
              "_source": {
                  "date": date,
-                 "ratio": data['ratio']
+                 "naver_ratio": data['ratio']
              }
         }
         docs.append(doc)
