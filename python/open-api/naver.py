@@ -54,7 +54,7 @@ def naver_NFT():
              }
         }
         docs.append(doc)
-
+    print(docs)
     res = helpers.bulk(es, docs)
     return list[-1]['period']
 
